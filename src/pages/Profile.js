@@ -53,18 +53,21 @@ class Profile extends Component {
                         </Col>
                         <Col xs="8">
                             <TabContent activeTab={this.state.activeTab}>
-                            <Col xs="4">
                                 <TabPane tabId="1">
                                     <Row>
                                     <Card body>
+                                    <Col xs="6">
                                         <CardText>Want to receive updates on new login and other account activities?</CardText>
+                                    </Col>
+                                    <Col xs="4">
+                                        <CardText>Allow desktop notifications</CardText>
+                                    </Col>
                                     </Card>
                                     <Card body>
                                         <CardText>Nama</CardText>
                                     </Card>
                                     </Row>
                                 </TabPane>
-                            </Col>
                                 <TabPane tabId="2">
                                     <Row>
                                     <Card body>
