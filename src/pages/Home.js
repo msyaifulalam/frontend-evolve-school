@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import '../App.css';
+// import '../components/Footer/Footer.css';
+import Footer from '../components/Footer/Footer';
 
 class Home extends Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header">
-                    <h3>Home</h3>
-                </header>
+                <Footer/>
             </div>
         );
     }

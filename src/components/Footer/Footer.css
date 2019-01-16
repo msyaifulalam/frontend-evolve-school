@@ -127,3 +127,9 @@
     font-size: 14px;
     font-weight: 500;
   }
+
+  /* kolom 2 */
+  .ListGroup .ListGroupItem {
+    background: rgb(44, 44, 44);
+    border-style: none;
+  }

@@ -41,12 +41,12 @@ class Footer extends Component {
                 <Col>
                     <div class="About">Tentang Traveloka</div>
                     {/* <ListGroup>
-                        <ListGroupItem active tag="a" href="#" action>Cara Pesan</ListGroupItem>
-                        <ListGroupItem active tag="a" href="#" action>Hubungi kami</ListGroupItem>
-                        <ListGroupItem active tag="a" href="#" action>Cara Pesan</ListGroupItem>
-                        <ListGroupItem active tag="a" href="#" action>Cara Pesan</ListGroupItem>
-                        <ListGroupItem active tag="a" href="#" action>Cara Pesan</ListGroupItem>
-                        <ListGroupItem active tag="a" href="#" action>Cara Pesan</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Cara Pesan</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Hubungi kami</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Pusat Bantuan</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Karier</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Cicilan</ListGroupItem>
+                        <ListGroupItem tag="a" href="#" action>Tentang Kami</ListGroupItem>
                     </ListGroup> */}
                     <div class="list">
                         <ul>

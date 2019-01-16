@@ -12,7 +12,6 @@ import {
 } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
-import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
