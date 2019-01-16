@@ -12,6 +12,13 @@ a.list-group-item {
     background-color: orange !important;
     color: white !important;
     width: 250px;
-    
+}
+
+.form-check {
+    margin: 0 !important;
+}
+
+.tagline-2 {
+    color: blue;
 }
 

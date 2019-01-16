@@ -1,9 +1,10 @@
 import React ,{ Component } from 'react';
-import { ListGroup, ListGroupItem, Row, Col, FormGroup, Label, Input, InputGroup, InputGroupAddon, TabContent, TabPane }
+import { ListGroup, ListGroupItem, Row, Col, TabContent, TabPane }
 from 'reactstrap';
-import '../main-form/forms.css';
-import { Button } from 'reactstrap';
+import '../main-form/Forms.css';
 import classnames from 'classnames';
+import Fill from '../fill-form/Fill.js';
+
 
 
 export default class Forms extends Component {
@@ -40,92 +41,51 @@ export default class Forms extends Component {
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }} 
                       tag="a" href="#" action>
-                    Hotels</ListGroupItem>
+                    Hotels
+                  </ListGroupItem>
                   <ListGroupItem 
-                  className={classnames({ active: this.state.activeTab === '3' })}
-                  onClick={() => { this.toggle('3'); }} 
-                    tag="a" href="#" action>
-                  Trains</ListGroupItem>
-                  <ListGroupItem tag="a" href="#" action>Bus & Shuttle</ListGroupItem>
-                  <ListGroupItem tag="a" href="#" action>Airport Transport</ListGroupItem>
-                  <ListGroupItem tag="a" href="#" action>Flight + Hotel</ListGroupItem>
-                  <ListGroupItem tag="a" href="#" action>Attractions & Activities</ListGroupItem>
-                  <ListGroupItem tag="a" href="#" action>Top-Up & Data Packages</ListGroupItem>
+                    className={classnames({ active: this.state.activeTab === '3' })}
+                    onClick={() => { this.toggle('3'); }} 
+                      tag="a" href="#" action>
+                      Trains
+                  </ListGroupItem>
+                  <ListGroupItem 
+                    className={classnames({ active: this.state.activeTab === '4' })}
+                    onClick={() => { this.toggle('4'); }} 
+                      tag="a" href="#" action>
+                      Bus & Shuttle
+                  </ListGroupItem>
+                  <ListGroupItem 
+                    className={classnames({ active: this.state.activeTab === '5' })}
+                    onClick={() => { this.toggle('5'); }} 
+                      tag="a" href="#" action>
+                      Airport Transport
+                  </ListGroupItem>
+                  <ListGroupItem 
+                    className={classnames({ active: this.state.activeTab === '6' })}
+                    onClick={() => { this.toggle('6'); }} 
+                      tag="a" href="#" action>
+                      Flight + Hotel
+                  </ListGroupItem>
+                  <ListGroupItem 
+                    className={classnames({ active: this.state.activeTab === '7' })}
+                    onClick={() => { this.toggle('7'); }} 
+                      tag="a" href="#" action> 
+                      Attractions & Activities
+                  </ListGroupItem>
+                  <ListGroupItem 
+                    className={classnames({ active: this.state.activeTab === '8' })}
+                    onClick={() => { this.toggle('8'); }} 
+                      tag="a" href="#" action>
+                      Top-Up & Data Packages
+                  </ListGroupItem>
                 </ListGroup>
             </Col>
 
             <Col sm={6} md={9}>
               <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="2">
-                  <p className="tagline-1">Hotel yang Terakhir Dilihat</p>
-                  <form>
-                    <Row form>
-                      <Col md={8}>
-                        <FormGroup>
-                          <Label for="detination">Kota, tujuan, atau nama hotel</Label>
-                          <InputGroup>
-                            <InputGroupAddon addonType="prepend">@</InputGroupAddon> 
-                            <Input type="text" name="" id="destination" placeholder="Yogyakarta, Provinsi Yogyakarta, Indonesia"></Input> 
-                          </InputGroup>
-                        </FormGroup>
-                      </Col>
-                      <Col md={4}>
-                        <FormGroup>
-                          <Label for="room">Tamu dan kamar</Label>
-                          <InputGroup>
-                            <InputGroupAddon addonType="prepend">@</InputGroupAddon> 
-                            <Input type="text" name="" id="room" placeholder="2 Tamu, 1 Kamar"></Input> 
-                          </InputGroup> 
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                    
-                    <Row form>
-                        <Col md={3}>
-                          <FormGroup>
-                            <Label for="checkin">Check-in</Label>
-                            <InputGroup>
-                              <InputGroupAddon addonType="prepend">@</InputGroupAddon> 
-                              <Input type="text" name="" id="chekin" placeholder="00:00"></Input> 
-                            </InputGroup>
-                          </FormGroup>
-                        </Col>
-                        <Col md={3}>
-                          <FormGroup>
-                            <Label for="duration">Durasi</Label>
-                            <InputGroup>
-                              <InputGroupAddon addonType="prepend">@</InputGroupAddon> 
-                              <Input type="text" name="" id="duration" placeholder="time"></Input> 
-                            </InputGroup>
-                          </FormGroup>
-                        </Col>
-                        <Col md={2}>
-                          <FormGroup>
-                            <Label for="checkout">Check-Out:</Label>
-                          </FormGroup>
-                        </Col>
-                        <Col md={4}>
-                          <FormGroup check>
-                            <Label check>
-                              <input type="checkbox" />
-                              Tampilkan akomodasi ramah keluarga
-                            </Label> 
-                          </FormGroup>
-                        </Col>
-                      </Row>
-
-                    <Row form>
-                      <Col md={3}>
-                        <p href="#">Bayar di Hotel</p>
-                      </Col>
-                      <Col md={5}>
-                        <p href="#">Traveloka best price guarantee</p>
-                      </Col>
-                      <Col md={4}>
-                        <Button color="warning">Cari hotel</Button>{' '}
-                      </Col>
-                    </Row>
-                  </form>
+                    <Fill/>
                 </TabPane>
               </TabContent>
             </Col>
