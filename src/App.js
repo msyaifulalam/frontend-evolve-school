@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Account from './pages/Account';
+import  Hoteldetail from './pages/Hoteldetail';
+import Carousels from './pages/Carousels';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,  //or 'BrowserRouter as Router,'
@@ -12,8 +14,6 @@ import {
 } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
-import './components/Navigasi.css';
-import Navigasi from './components/Navigasi'
 
 
 class App extends Component {
@@ -25,6 +25,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component = {() => <Home/>}></Route>
               <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
+              <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
+              <Route path="/carousels" component = {(match) => <Carousels router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
             </Switch>
           {/* </div> */}
