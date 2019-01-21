@@ -1,11 +1,18 @@
+.container {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 1px 1px 6px #cccccc;
+}
+
 .tagline-1{
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(67, 67, 255);
     font-weight: 600;
+    margin-top: 20px;
 }
 
 a.list-group-item {
     border: none !important;
+    background-color: transparent;
 }
 
 .btn-warning {
@@ -15,10 +22,35 @@ a.list-group-item {
 }
 
 .form-check {
-    margin: 0 !important;
+    padding-left: 0 !important;
 }
 
 .tagline-2 {
     color: blue;
+}
+
+.loc {
+    border: 1;
+}
+
+.fill {
+    background-color: white;
+    height: 295px;
+    width: 835px;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.fill-row {
+    position: relative;
+    padding: 15px !important;
+}
+
+.first-row {
+    font-weight: 500;
+}
+
+.second-row {
+    font-weight: 500;
 }
 

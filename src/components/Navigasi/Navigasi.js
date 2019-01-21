@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import logo from './assets/logo.svg';
-import burger from './assets/burger.svg';
-import pesawat from './assets/pesawat.svg';
-import bus from './assets/bus.svg';
-import kereta from './assets/kereta.svg';
-import hotel from './assets/hotel.svg';
-import pesawathotel from './assets/pesawathotel.svg';
-import rekreasi from './assets/rekreasi.svg';
-import tagihan from './assets/tagihan.svg';
-import bandara from './assets/bandara.svg';
+import logo from '../assets/logo.svg';
+import burger from '../assets/burger.svg';
+import pesawat from '../assets/pesawat.svg';
+import bus from '../assets/bus.svg';
+import kereta from '../assets/kereta.svg';
+import hotel from '../assets/hotel.svg';
+import pesawathotel from '../assets/pesawathotel.svg';
+import rekreasi from '../assets/rekreasi.svg';
+import tagihan from '../assets/tagihan.svg';
+import bandara from '../assets/bandara.svg';
+import './Navigasi.css';
 
 
 import {
@@ -32,7 +33,7 @@ export class Navigasi extends Component {
     return (
       <div>
         
-          <Navbar expand="md">
+          <Navbar id="navigasi" expand="md">
             <Container>
               <NavbarBrand href="/"><img src={burger} /> &nbsp; <img src={logo} /></NavbarBrand>
               <NavbarToggler  />
