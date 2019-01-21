@@ -4,8 +4,6 @@ import {
     Container,
     Row,
     Col,
-    ListGroup,
-    ListGroupItem,
 } from 'reactstrap';
 import pict1 from '../../asset/traveloka.svg'; 
 import pict2 from '../../asset/24.svg'; 
@@ -22,85 +20,78 @@ import googleplus from '../../asset/google+.svg';
 class Footer extends Component {
     render() {
       return (
-        <Container>
-            <Row>
-                <Col>
-                    <img src={pict1}/>
-                    <br/>
-                    <div class="img">
-                        <img src={pict2}/>
-                        <div class="text1">Hubungi Kami
-                            <div class="text2">0804-1500-308</div>
-                        </div>
-                    </div>
-                    <br/>
-                    <img src={pict3}/> &nbsp;
-                    <img src={pict4}/> &nbsp;
-                    <img src={pict5}/>
-                </Col>
-                <Col>
-                    <div class="About">Tentang Traveloka</div>
-                    {/* <ListGroup>
-                        <ListGroupItem tag="a" href="#" action>Cara Pesan</ListGroupItem>
-                        <ListGroupItem tag="a" href="#" action>Hubungi kami</ListGroupItem>
-                        <ListGroupItem tag="a" href="#" action>Pusat Bantuan</ListGroupItem>
-                        <ListGroupItem tag="a" href="#" action>Karier</ListGroupItem>
-                        <ListGroupItem tag="a" href="#" action>Cicilan</ListGroupItem>
-                        <ListGroupItem tag="a" href="#" action>Tentang Kami</ListGroupItem>
-                    </ListGroup> */}
-                    <div class="list">
-                        <ul>
-                            <li><a href="">Cara Pesan</a></li>
-                            <li><a href="">Hubungi kami</a></li>
-                            <li><a href="">Pusat Bantuan</a></li>
-                            <li><a href="">Karier</a></li>
-                            <li><a href="">Cicilan</a></li>
-                            <li><a href="">Tentang Kami</a></li>
-                        </ul>
-                    </div>
-                </Col>
-                <Col>
-                    <div class="follow">Follow kami di
-                        <div class="icon1">
-                            <img src={twitter}/>
-                            <div class="text1">
-                                <a href="">Twitter</a>
+        <div class="footer">
+            <Container>
+                <Row>
+                    <Col>
+                        <img src={pict1}/>
+                        <br/>
+                        <div class="img">
+                            <img src={pict2}/>
+                            <div class="text1">Hubungi Kami
+                                <div class="text2">0804-1500-308</div>
                             </div>
                         </div>
-                        <div class="icon2">
-                            <img src={facebook}/>
-                            <div class="text2">
-                                <a href="">Facebook</a>
+                        <br/>
+                        <img src={pict3}/> &nbsp;
+                        <img src={pict4}/> &nbsp;
+                        <img src={pict5}/>
+                    </Col>
+                    <Col>
+                        <div class="About">Tentang Traveloka</div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="">Cara Pesan</a></li>
+                                <li><a href="">Hubungi kami</a></li>
+                                <li><a href="">Pusat Bantuan</a></li>
+                                <li><a href="">Karier</a></li>
+                                <li><a href="">Cicilan</a></li>
+                                <li><a href="">Tentang Kami</a></li>
+                            </ul>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div class="follow">Follow kami di
+                            <div class="icon1">
+                                <img src={twitter}/>
+                                <div class="text1">
+                                    <a href="https://twitter.com/traveloka?lang=en">Twitter</a>
+                                </div>
+                            </div>
+                            <div class="icon2">
+                                <img src={facebook}/>
+                                <div class="text2">
+                                    <a href="https://www.facebook.com/TravelokaID/?brand_redir=1391950997779915">Facebook</a>
+                                </div>
+                            </div>
+                            <div class="icon3">
+                                <img src={instagram}/>
+                                <div class="text3">
+                                    <a href="https://www.instagram.com/traveloka/?hl=en">Instagram</a>    
+                                </div>
+                            </div>
+                            <div class="icon4">
+                                <img src={googleplus}/>
+                                <div class="text4">
+                                    <a href="https://plus.google.com/+Traveloka">Google+</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="icon3">
-                            <img src={instagram}/>
-                            <div class="text3">
-                                <a href="">Instagram</a>    
+                    </Col>
+                    <Col>
+                        <div class="download">Download Traveloka App
+                            <div class="logo1">
+                                <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android}/></a>
+                            </div>
+                            <div class="logo2">
+                                <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple}/></a>
                             </div>
                         </div>
-                        <div class="icon4">
-                            <img src={googleplus}/>
-                            <div class="text4">
-                                <a href="">Google+</a>
-                            </div>
-                        </div>
-                    </div>
-                </Col>
-                <Col>
-                    <div class="download">Download Traveloka App
-                        <div class="logo1">
-                            <a href=""><img src={android}/></a>
-                        </div>
-                        <div class="logo2">
-                            <a href=""><img src={apple}/></a>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-            
-            <div class="copyright">Copyright © 2019 Traveloka</div>
-        </Container>
+                    </Col>
+                </Row>
+                <div class="copyright">Copyright © 2019 Traveloka</div>
+            </Container>
+        </div>
       );
     }
   }
