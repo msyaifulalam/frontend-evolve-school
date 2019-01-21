@@ -9,6 +9,7 @@ import {
     ListGroupItem,
     TabContent, TabPane, Card, Button, CardTitle, CardText
 } from 'reactstrap';
+import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli';
 
 class Profile extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class Profile extends Component {
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '2' })} onClick={() => { this.toggle('2'); }}>Poin Saya</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '3' })} onClick={() => { this.toggle('3'); }}>Tagihan Saya</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '4' })} onClick={() => { this.toggle('4'); }}>Kartu Saya</ListGroupItem>
-                            <ListGroupItem className={classnames({ active: this.state.activeTab === '5' })} onClick={() => { this.toggle('5'); }}>Daftar Pembelian</ListGroupItem>
+                            <ListGroupItem className={classnames({ active: this.state.activeTab === '5' })} onClick={() => { this.toggle('5'); }}>DaftarPembelian</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '6' })} onClick={() => { this.toggle('6'); }}>Pesanan Saya</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '7' })} onClick={() => { this.toggle('7'); }}>Passenger Quick Pick</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '8' })} onClick={() => { this.toggle('8'); }}>Info Promo</ListGroupItem>
@@ -98,9 +99,7 @@ class Profile extends Component {
                                 <TabPane tabId="5">
                                     <Row>
                                     <Card body>
-                                        <CardTitle>Daftar Pembelian</CardTitle>
-                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                                        <Button>Go somewhere</Button>
+                                        <Tanggalbeli/>
                                     </Card>
                                     </Row>
                                 </TabPane>

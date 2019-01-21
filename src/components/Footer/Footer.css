@@ -1,123 +1,126 @@
-
-.img {
+  .footer {
+    background: rgb(44, 44, 44);
+    color: white;
+  }
+  .footer .img {
     display: flex;
     color: #ffffff;
   }
-  .img .text1 {
+  .footer .img .text1 {
     margin-left: 8px;
     margin-top: 5px;
     font-size: 10px;
   }
-  .img .text2 {
+  .footer .img .text2 {
     font-size: 15px;
   }
   
   
   /* kolom 2 */
-  .About {
+  .footer .About {
     margin-top: 20px;
     margin-left: 39px;
     font-weight: bold;
   }
-  .list ul li {
+  .footer .list ul li {
     margin-top: 8px;
     font-size: 13px;
     list-style-type: none;
     text-align: left;
   }
-  .list ul li a:hover {
+  .footer .list ul li a:hover {
     color: #ffffff;
   }
-  .list ul li a {
+  .footer .list ul li a {
     color: #7e7e7e;
   }
   
   
   /* kolom 3 */
-  .follow {
+  .footer .follow {
     margin-top: 20px;
     font-weight: bold;
   }
-  .follow .icon1 {
+  .footer .follow .icon1 {
     margin-top: 10px;
     display: flex;
   }
-  .follow .icon1 .text1 {
+  .footer .follow .icon1 .text1 {
     margin-left: 5px;
     font-size: 13px;
     font-weight: normal;
     color: #7e7e7e;
   }
-  .follow .icon1 .text1 a {
+  .footer .follow .icon1 .text1 a {
     color: #7e7e7e;
   }
-  .follow .icon1 .text1 a:hover {
+  .footer .follow .icon1 .text1 a:hover {
     color: #ffffff;
   }
-  .follow .icon2 {
+  .footer .follow .icon2 {
     margin-top: 10px;
     display: flex;
   }
-  .follow .icon2 .text2 {
+  .footer .follow .icon2 .text2 {
     margin-left: 5px;
     font-size: 13px;
     font-weight: normal;
     color: #7e7e7e;
   }
-  .follow .icon2 .text2 a {
+  .footer .follow .icon2 .text2 a {
     color: #7e7e7e;
   }
-  .follow .icon2 .text2 a:hover {
+  .footer .follow .icon2 .text2 a:hover {
     color: #ffffff;
   }
-  .follow .icon3 {
+  .footer .follow .icon3 {
     margin-top: 10px;
     display: flex;
   }
-  .follow .icon3 .text3 {
+  .footer .follow .icon3 .text3 {
     margin-left: 5px;
     font-size: 13px;
     font-weight: normal;
     color: #7e7e7e;
   }
-  .follow .icon3 .text3 a {
+  .footer .follow .icon3 .text3 a {
     color: #7e7e7e;
   }
-  .follow .icon3 .text3 a:hover {
+  .footer .follow .icon3 .text3 a:hover {
     color: #ffffff;
   }
-  .follow .icon4 {
+  .footer .follow .icon4 {
     margin-top: 10px;
     display: flex;
   }
-  .follow .icon4 .text4 {
+  .footer .follow .icon4 .text4 {
     margin-left: 5px;
     font-size: 13px;
     font-weight: normal;
     color: #7e7e7e;
   }
-  .follow .icon4 .text4 a {
+  .footer .follow .icon4 .text4 a {
     color: #7e7e7e;
   }
-  .follow .icon4 .text4 a:hover {
+  .footer .follow .icon4 .text4 a:hover {
     color: #ffffff;
   }
   
   
   /* kolom 4 */
-  .download {
+  .footer .download {
     margin-top: 20px;
     font-weight: bold;
   }
-  .download .logo1 {
+  .footer .download .logo1 {
     margin-top: 15px;
   }
-  .download .logo2 {
+  .footer .download .logo2 {
     margin-top: 15px;
   }
   
   /* end */
-  .copyright {
+  .footer .copyright {
     padding : 24px 24px 5px;
     line-height: 24px;
     border-top: 1px solid;
@@ -126,10 +129,4 @@
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
-  }
-
-  /* kolom 2 */
-  .ListGroup .ListGroupItem {
-    background: rgb(44, 44, 44);
-    border-style: none;
   }
