@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Pages.css';
-import Profile from '../components/Profile/Profile'
+import Profile from '../components/Profile/Profile';
+import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli'
 import classnames from 'classnames';
 import {
     Container,
@@ -9,7 +10,7 @@ import {
     ListGroup,
     ListGroupItem,
     TabContent, TabPane,
-    // Card, Button, CardTitle, CardText
+    Card, Button, CardTitle, CardText
 } from 'reactstrap';
 
 class Account extends Component {
@@ -55,6 +56,76 @@ class Account extends Component {
                             <TabContent activeTab={this.state.activeTab}>
                                 <TabPane tabId="1">
                                     <Profile/>
+                                </TabPane>
+                                <TabPane tabId="2">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Poin Saya</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="3">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Tagihan Saya</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="4">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Kartu Saya</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="5">
+                                    <Row>
+                                    <Card body>
+                                        <Tanggalbeli/>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="6">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Pesanan Saya</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="7">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Passenger Quick Pick</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="8">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Info Promo</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="9">
+                                    <Row>
+                                    <Card body>
+                                        <CardTitle>Best Price Guarantee</CardTitle>
+                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                        <Button>Go somewhere</Button>
+                                    </Card>
+                                    </Row>
                                 </TabPane>
                             </TabContent>
                         </Col>
