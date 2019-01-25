@@ -1,6 +1,7 @@
-.container {
+.main-form.container {
     background-color: rgb(241, 241, 241);
     box-shadow: 1px 1px 6px #cccccc;
+    margin-bottom: 50px;
 }
 
 .tagline-1{
@@ -35,7 +36,6 @@ a.list-group-item {
 
 .fill {
     background-color: white;
-    height: 295px;
     width: 835px;
     position: absolute;
     margin-top: 30px;

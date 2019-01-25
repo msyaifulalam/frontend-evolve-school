@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import '../components/Footer/Footer.css';
 import Footer from '../components/Footer/Footer';
 import Navigasi from '../components/Navigasi/Navigasi';
-import Forms from '../components/main-form/Forms';
+import MainForm from '../components/Forms/MainForm';
 // import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli';
 
 class Home extends Component {
@@ -11,7 +10,7 @@ class Home extends Component {
         return (
             <div className="App">
                 <Navigasi/>
-                <Forms/>
+                <MainForm/>
                 <Footer/>
             </div>
         );
