@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Pages.css';
+import Profile from '../components/Profile/Profile';
+import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli'
 import classnames from 'classnames';
 import {
     Container,
     Row, Col,
     ListGroup,
     ListGroupItem,
-    TabContent, TabPane, Card, Button, CardTitle, CardText
+    TabContent, TabPane,
+    Card, Button, CardTitle, CardText
 } from 'reactstrap';
 
-class Profile extends Component {
+class Account extends Component {
     constructor(props) {
         super(props);
     
@@ -37,9 +40,7 @@ class Profile extends Component {
                     <Row>
                         <Col xs="4">
                         <ListGroup>
-                            <ListGroupItem className={classnames({ active: this.state.activeTab === '1' })} onClick={() => { this.toggle('1'); }}>
-                                Ubah Profile
-                            </ListGroupItem>
+                            <ListGroupItem className={classnames({ active: this.state.activeTab === '1' })} onClick={() => { this.toggle('1'); }}>Ubah Profile</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '2' })} onClick={() => { this.toggle('2'); }}>Poin Saya</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '3' })} onClick={() => { this.toggle('3'); }}>Tagihan Saya</ListGroupItem>
                             <ListGroupItem className={classnames({ active: this.state.activeTab === '4' })} onClick={() => { this.toggle('4'); }}>Kartu Saya</ListGroupItem>
@@ -54,19 +55,7 @@ class Profile extends Component {
                         <Col xs="8">
                             <TabContent activeTab={this.state.activeTab}>
                                 <TabPane tabId="1">
-                                    <Row>
-                                    <Card body>
-                                    <Col xs="6">
-                                        <CardText>Want to receive updates on new login and other account activities?</CardText>
-                                    </Col>
-                                    <Col xs="4">
-                                        <CardText>Allow desktop notifications</CardText>
-                                    </Col>
-                                    </Card>
-                                    <Card body>
-                                        <CardText>Nama</CardText>
-                                    </Card>
-                                    </Row>
+                                    <Profile/>
                                 </TabPane>
                                 <TabPane tabId="2">
                                     <Row>
@@ -98,9 +87,7 @@ class Profile extends Component {
                                 <TabPane tabId="5">
                                     <Row>
                                     <Card body>
-                                        <CardTitle>Daftar Pembelian</CardTitle>
-                                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                                        <Button>Go somewhere</Button>
+                                        <Tanggalbeli/>
                                     </Card>
                                     </Row>
                                 </TabPane>
@@ -150,4 +137,4 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+export default Account;

@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 //import store from './store';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Profile from './pages/Profile';
+import Account from './pages/Account';
+import  Hoteldetail from './pages/Hoteldetail';
+import Carousels from './pages/Carousels';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,  //or 'BrowserRouter as Router,'
@@ -22,7 +24,9 @@ class App extends Component {
          {/* <div> */}
             <Switch>
               <Route exact path="/" component = {() => <Home/>}></Route>
-              <Route path="/profile" component = {(match) => <Profile router = {match}/>}></Route>
+              <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
+              <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
+              <Route path="/carousels" component = {(match) => <Carousels router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
             </Switch>
           {/* </div> */}

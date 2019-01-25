@@ -1,0 +1,129 @@
+/* .App-header{
+    color: black;
+    background-color:  rgb(244, 245, 245);
+} */
+
+.bg {
+    background-color: rgb(244, 245, 245);
+}
+
+/* sejajarkiri */
+.bg .marginleft {
+    margin-left: 2px;
+}
+
+/* tanggal dari */
+.bg .form-control {
+    border: none;
+}
+.bg .marginleft .putih .ratakiri {
+    margin-left: 15px;
+}
+.bg .marginleft .putih {
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+.bg .marginleft .putih .textdari {
+    margin-left: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(163, 163, 163);
+}
+
+
+/* tanggal sampai */
+.bg .marginleft .putih .textsampai {
+    margin-left: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(163, 163, 163);
+}
+
+.bg .marginleft .bulan {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+}
+
+/* listgroup 1 */
+.bg .list-group-item {
+    display: flex;
+    font-size: 15px;
+}
+.bg .list-group-item .jarak {
+    margin-left: 10px;
+}
+.bg .list-group-item .pesanan1 {
+    margin-left: 4px;
+    font-weight: bold;
+}
+.bg .list-group-item .harga1 {
+    margin-left: 400px;
+    font-weight: bold;
+}
+.bg .list-group-item .detail1 {
+    color: rgb(68, 139, 231);
+    margin-left: 423px;
+    font-weight: bold;
+}
+
+.bg .spasi {
+    margin-top: 10px;
+}
+
+/* listgroup 2 */
+.bg .list-group-item {
+    display: flex;
+    font-size: 15px;
+}
+.bg .list-group-item .pesanan2 {
+    margin-left: 4px;
+    font-weight: bold;
+}
+.bg .list-group-item .harga2 {
+    margin-left: 400px;
+    font-weight: bold;
+}
+.bg .list-group-item .detail2 {
+    color: rgb(68, 139, 231);
+    margin-left: 423px;
+    font-weight: bold;
+}
+
+/* listgroup 3 */
+.bg .list-group-item {
+    display: flex;
+    font-size: 15px;
+}
+.bg .list-group-item .pesanan3 {
+    margin-left: 4px;
+    font-weight: bold;
+}
+.bg .list-group-item .harga3 {
+    margin-left: 400px;
+    font-weight: bold;
+}
+.bg .list-group-item .detail3 {
+    color: rgb(68, 139, 231);
+    margin-left: 423px;
+    font-weight: bold;
+}
+.bg .list-group-item .kotak {
+    display: flex;
+    width: 40px;
+    height: 20px;
+    background-image: url("../../asset/img/check-icon.png");
+    background-size: cover;
+}
+.bg .list-group-item .kotak .berhasil {
+    /* display: flex;
+    width: 100%; */
+    margin-left: 50px;
+}
+
+
+
