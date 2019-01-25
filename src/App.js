@@ -12,8 +12,6 @@ import {
 } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
-import './components/Navigasi.css';
-import Navigasi from './components/Navigasi'
 
 
 class App extends Component {
