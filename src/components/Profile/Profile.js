@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Profile.css';
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { getProfile } from '../../action/action';
 
 class Profile extends Component {
     constructor(props){
@@ -21,10 +23,20 @@ class Profile extends Component {
                 nama_belakang: response.data.data.nama_belakang,
                 hp: response.data.data.handphone,
                 email: response.data.data.email
-            })
+            }, () => this.profile())
         }).catch(err => {
             console.log(err);
         });
+    }
+
+    profile(){
+        const profileDetail = {
+            nama_depan: this.state.nama_depan,
+            nama_belakang: this.state.nama_belakang,
+            hp: this.state.hp,
+            email: this.state.email
+        }
+        this.props.save(profileDetail);
     }
 
     render() {
@@ -162,4 +174,14 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+const propsRedux = dispatch => ({
+    save: profileDetail => {
+        console.log(profileDetail)
+        dispatch(getProfile(profileDetail))
+    }
+});
+
+// const stateRedux = state => ({});
+
+export default connect(null, propsRedux) (Profile);
+// export default Profile;

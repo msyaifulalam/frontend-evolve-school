@@ -1,11 +1,11 @@
 import React ,{ Component } from 'react';
 import { Row, Col, FormGroup, Label, Input, InputGroup, InputGroupAddon, Table } from 'reactstrap';
 import { Button } from 'reactstrap';
-import LastView from '../../asset/Forms-svg/LastView.svg';
-import Location from '../../asset/Forms-svg/Location.svg';
-import Payment from '../../asset/Forms-svg/Payment.svg';
-import BestPrice from '../../asset/Forms-svg/BestPrice.svg';
-import Search from '../../asset/Forms-svg/Search.svg';
+import LastView from '../../../asset/Forms-svg/LastView.svg';
+import Location from '../../../asset/Forms-svg/Location.svg';
+import Payment from '../../../asset/Forms-svg/Payment.svg';
+import BestPrice from '../../../asset/Forms-svg/BestPrice.svg';
+import Search from '../../../asset/Forms-svg/Search.svg';
 
 
 export default class Fill extends Component {

@@ -1,9 +1,9 @@
 import React ,{ Component } from 'react';
 import { ListGroup, ListGroupItem, Row, Col, TabContent, TabPane }
 from 'reactstrap';
-import '../main-form/Forms.css';
+import './MainForm.css';
 import classnames from 'classnames';
-import Fill from '../fill-form/Fill.js';
+import HotelForm from './HotelForm/HotelForm';
 import Flight from '../../asset/Forms-svg/Flight.svg';
 import Hotel from '../../asset/Forms-svg/Hotel.svg';
 import Train from '../../asset/Forms-svg/Train.svg';
@@ -35,7 +35,7 @@ export default class Forms extends Component {
 
   render() {
     return (
-      <div className="container"  >
+      <div className="main-form container">
         <Row className="show-grid mt-5">
             <Col sm={6} md={3}>
                 <ListGroup>
@@ -101,7 +101,7 @@ export default class Forms extends Component {
             <Col sm={6} md={9}>
               <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="2">
-                    <Fill/>
+                    <HotelForm/>
                 </TabPane>
               </TabContent>
             </Col>
