@@ -20,8 +20,9 @@ import googleplus from '../../asset/google+.svg';
 class Footer extends Component {
     render() {
       return (
-        <div class="footer">
-            <Container>
+          //kasih tau sendy tambahin mt-3 di div footer, dan kasih style di container
+        <div class="footer mt-3"> 
+            <Container style={{backgroundColor:'transparent', boxShadow:'none'}}>
                 <Row>
                     <Col>
                         <img src={pict1}/>

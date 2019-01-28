@@ -44,7 +44,7 @@ export default class Fill extends Component {
                         <FormGroup>
                             <Label for="destination">Kota, tujuan, atau nama hotel</Label>
                             <InputGroup>
-                                <InputGroupAddon addonType="prepend"><Table><img className="loc" src={Location}/></Table></InputGroupAddon> 
+                                <InputGroupAddon addonType="prepend"><img src=  {Location} /></InputGroupAddon> 
                                 <Input onChange={(e) => this.changeHandler(e, 'destination')} type="text" name="name" id="destination" placeholder="Yogyakarta, Provinsi Yogyakarta, Indonesia"></Input> 
                             </InputGroup>
                         </FormGroup>
