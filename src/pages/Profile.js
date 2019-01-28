@@ -98,7 +98,7 @@ class Profile extends Component {
                                 </TabPane>
                                 <TabPane tabId="5">
                                     <Row>
-                                    <Card body>
+                                    <Card className="nobackground" body>
                                         <Tanggalbeli/>
                                     </Card>
                                     </Row>

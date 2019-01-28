@@ -2,10 +2,10 @@
     /* background-color: #e7e8e9; */
     background-color: transparent;
 }
-/* .tab-content .tab-pane .card .card-body {
+.bg .card-body {
     background-color: transparent;
     border: none;
-} */
+}
 img {
     padding-bottom: 5px;
 }

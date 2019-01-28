@@ -21,17 +21,17 @@ import Tagihan from '../../asset/tagihan.svg';
 class Tanggalbeli extends Component {
     render() {
         return (
-            <div class="bg">
+            <div className="bg">
                 <Form>
-                    <div class="marginleft">
+                    <div className="marginleft">
                         <Row form>
                             <Col md={6}>
-                                <div class="putih">
+                                <div className="putih">
                                     <FormGroup>
                                         <Label for="exampleDate">
-                                            <div class="textdari">Dari</div>
+                                            <div className="textdari">Dari</div>
                                         </Label>
-                                        <div class="ratakiri">
+                                        <div className="ratakiri">
                                             <InputGroup>
                                                 <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
                                                 <Input 
@@ -46,12 +46,12 @@ class Tanggalbeli extends Component {
                                 </div>
                             </Col>
                             <Col md={6}>
-                                <div class="putih">
+                                <div className="putih">
                                     <FormGroup>
                                         <Label for="exampleDate">
-                                            <div class="textsampai">Sampai</div>
+                                            <div className="textsampai">Sampai</div>
                                         </Label>
-                                        <div class="ratakiri">
+                                        <div className="ratakiri">
                                             <InputGroup>
                                                 <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
                                                 <Input
@@ -65,22 +65,22 @@ class Tanggalbeli extends Component {
                                 </div>
                             </Col>
                         </Row>
-                        <div class="bulan">Januari 2019</div>
+                        <div className="bulan">Januari 2019</div>
                     </div> 
                     <Col md={15}>
                         <ListGroup>
                             <ListGroupItem color="light">No. Pesanan 
-                                <div class="pesanan1">411059742</div>
-                                <div class="harga1">Rp 125.742</div>
+                                <div className="pesanan1">411059742</div>
+                                <div className="harga1">Rp 125.742</div>
                             </ListGroupItem>
                             <ListGroupItem color="dark"><img src={Bandara}/>
-                                <div class="jarak">Ke Soekarno Hatta International Airport (CGK)</div>
+                                <div className="jarak">Ke Soekarno Hatta International Airport (CGK)</div>
                             </ListGroupItem>
                             <ListGroupItem color="light">
-                                <div class="groupstatus">
-                                    <div class="kotak"></div> 
-                                    <div class="berhasil">Pembelian Berhasil
-                                        <div class="detail1">
+                                <div className="groupstatus">
+                                    <div className="kotak"></div> 
+                                    <div className="berhasil">Pembelian Berhasil
+                                        <div className="detail1">
                                             <a href="">Lihat Detail  ...</a>
                                         </div>
                                     </div>
@@ -88,21 +88,21 @@ class Tanggalbeli extends Component {
                             </ListGroupItem>
                         </ListGroup>
                     </Col>
-                    <div class="spasi">
+                    <div className="spasi">
                         <Col md={15}>
                             <ListGroup>
                                 <ListGroupItem color="light">No. Pesanan 
-                                    <div class="pesanan2">411018548</div>
-                                    <div class="harga2">Rp 131.548</div> 
+                                    <div className="pesanan2">411018548</div>
+                                    <div className="harga2">Rp 131.548</div> 
                                 </ListGroupItem>
                                 <ListGroupItem color="dark"><img src={Hotel}/>
-                                    <div class="jarak">Airy Eco Syariah Bandara Soetta Perumahan Bandara Mas satu Tangerang</div>
+                                    <div className="jarak">Airy Eco Syariah Bandara Soetta Perumahan Bandara Mas satu Tangerang</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light"> 
-                                    <div class="groupstatus">
-                                        <div class="kotak"></div> 
-                                        <div class="berhasil">Pembelian Berhasil
-                                            <div class="detail2">
+                                    <div className="groupstatus">
+                                        <div className="kotak"></div> 
+                                        <div className="berhasil">Pembelian Berhasil
+                                            <div className="detail2">
                                                 <a href="">Lihat Detail  ...</a>
                                             </div>
                                         </div>
@@ -111,21 +111,21 @@ class Tanggalbeli extends Component {
                             </ListGroup>
                         </Col>
                     </div>
-                    <div class="spasi">
+                    <div className="spasi">
                         <Col md={15}>
                             <ListGroup> 
                                 <ListGroupItem color="light">No. Pesanan 
-                                    <div class="pesanan3">411012196</div>
-                                    <div class="harga3">Rp 165.196</div>
+                                    <div className="pesanan3">411012196</div>
+                                    <div className="harga3">Rp 165.196</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="dark"><img src={Tagihan}/>
-                                    <div class="jarak">XL Axiata - XL Prioritas</div>
+                                    <div className="jarak">XL Axiata - XL Prioritas</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light">
-                                    <div class="groupstatus">
-                                        <div class="kotak"></div> 
-                                        <div class="berhasil">Pembelian Berhasil
-                                            <div class="detail3">
+                                    <div className="groupstatus">
+                                        <div className="kotak"></div> 
+                                        <div className="berhasil">Pembelian Berhasil
+                                            <div className="detail3">
                                                 <a href="">Lihat Detail  ...</a>
                                             </div>
                                         </div>

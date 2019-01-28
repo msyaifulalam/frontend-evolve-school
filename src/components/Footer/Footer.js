@@ -29,8 +29,8 @@ class Footer extends Component {
         
     componentDidMount(){
         axios.all([
-            axios.get('http://demo2118348.mockable.io/footer/menu'),
-            axios.get('http://demo2118348.mockable.io/social-media')
+            axios.get('https://backend-evolve.herokuapp.com/footers/about'),
+            axios.get('https://backend-evolve.herokuapp.com/footers/sosmed')
         ])
         .then(axios.spread ((footersRes,sosmedsRes) => {
             console.log(footersRes);
@@ -46,16 +46,16 @@ class Footer extends Component {
     
     render() {
       return (
-        <div class="footer">
+        <div className="footer">
             <Container>
                 <Row>
                     <Col>
                         <img src={pict1}/>
                         <br/>
-                        <div class="img">
+                        <div className="img">
                             <img src={pict2}/>
-                            <div class="text1">Hubungi Kami
-                                <div class="text2">0804-1500-308</div>
+                            <div className="text1">Hubungi Kami
+                                <div className="text2">0804-1500-308</div>
                             </div>
                         </div>
                         <br/>
@@ -64,8 +64,8 @@ class Footer extends Component {
                         <img src={pict5}/>
                     </Col>
                     <Col>
-                        <div class="About">Tentang Traveloka</div>
-                        <div class="list">
+                        <div className="About">Tentang Traveloka</div>
+                        <div className="list">
                             <ul>
                                 {this.state.footers.map((footer) => 
                                     <li key={footer.id}><a href={footer.path_url}>{footer.name}</a></li>
@@ -74,11 +74,11 @@ class Footer extends Component {
                         </div>
                     </Col>
                     <Col>
-                        <div class="follow" >Follow kami di 
+                        <div className="follow" >Follow kami di 
                             {this.state.sosmeds.map((sosmed) =>
-                                <div class="icon2" key={sosmed.id}>
+                                <div className="icon2" key={sosmed.id}>
                                     <img src={sosmed.icon}/>
-                                    <div class="text2">
+                                    <div className="text2">
                                         <a href={sosmed.path_url}>{sosmed.name}</a>
                                     </div>
                                 </div>    
@@ -86,17 +86,17 @@ class Footer extends Component {
                         </div>
                     </Col>
                     <Col>
-                        <div class="download">Download Traveloka App
-                            <div class="logo1">
+                        <div className="download">Download Traveloka App
+                            <div className="logo1">
                                 <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android}/></a>
                             </div>
-                            <div class="logo2">
+                            <div className="logo2">
                                 <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple}/></a>
                             </div>
                         </div>
                     </Col>
                 </Row>
-                <div class="copyright">Copyright © 2019 Traveloka</div>
+                <div className="copyright">Copyright © 2019 Traveloka</div>
             </Container>
         </div>
       );
