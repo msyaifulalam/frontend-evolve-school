@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import './Pages.css';
+import './Account.css';
 import Profile from '../components/Profile/Profile';
 import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli'
 import classnames from 'classnames';
@@ -36,7 +36,7 @@ class Account extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <Container>
+                    <Container className="Acc-Container">
                     <Row>
                         <Col xs="4">
                         <ListGroup>
