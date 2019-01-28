@@ -1,13 +1,22 @@
-body{
-    background-color:#eee !important;
-}
 
-/* .App-header{
+.App-header{
     color: black;
     background-color: #e6eaed;
-} */
+}
+.Acc-Container{
+    background-color: transparent;
+    box-shadow: unset;
+}
 .list-group-item{
     background-color: transparent;
+}
+.card.nobackground {
+    background-color: transparent;
+    border: none;
+}
+
+body{
+    background-color:#eee !important;
 }
 
 .col{

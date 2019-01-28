@@ -6,7 +6,7 @@
 
 .tagline-1{
     font-size: 16px;
-    color: rgb(67, 67, 255);
+    color: #0770cd;
     font-weight: 600;
     margin-top: 20px;
 }
@@ -27,10 +27,10 @@ a.list-group-item {
 }
 
 .tagline-2 {
-    color: blue;
+    color: #0770cd;
 }
 
-.loc {
+img > .loc {
     border: 1;
 }
 

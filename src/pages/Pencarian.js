@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Pages.css';
+import './Account.css';
 import {
     Container,
     Button,
