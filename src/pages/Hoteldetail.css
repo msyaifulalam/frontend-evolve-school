@@ -7,7 +7,7 @@
     flex: nowrap;
 }
 
-.img-facility > img{
+img.hoteldetail, .img-facility > img{
     margin: 10px 50px;
     width: 32px;
     height: 32px;

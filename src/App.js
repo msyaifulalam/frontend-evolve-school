@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Pencarian from './pages/Pencarian';
+import Navigasi from './components/Navigasi/Navigasi';
 import Account from './pages/Account';
 import  Hoteldetail from './pages/Hoteldetail';
 import Carousels from './pages/Carousels';
@@ -15,6 +17,7 @@ import {
 import './App.css';
 
 
+
 class App extends Component {
   render() {
     return (
@@ -23,7 +26,8 @@ class App extends Component {
          {/* <div> */}
             <Switch>
               <Route exact path="/" component = {() => <Home/>}></Route>
-              <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
+              <Route path="/profile" component = {(match) => <Navigasi router = {match}/>}></Route>
+              <Route path="/pencarian" component = {(match) => <Pencarian router = {match}/>}></Route>
               <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
               <Route path="/carousels" component = {(match) => <Carousels router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
@@ -36,3 +40,4 @@ class App extends Component {
   }
 
 export default App;
+
