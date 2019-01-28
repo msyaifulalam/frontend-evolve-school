@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../../App.css';
 import '../DaftarPembelian/Daftarbeli.css';
 import {
-    Container,
     FormGroup,
     Label,
     Input,
@@ -18,13 +17,11 @@ import Tanggal from '../../asset/tanggal.svg';
 import Bandara from '../../asset/bandara.svg';
 import Hotel from '../../asset/hotel.svg';
 import Tagihan from '../../asset/tagihan.svg';
-import Ceklist from '../../asset/img/check-icon.png';
 
 class Tanggalbeli extends Component {
     render() {
         return (
             <div class="bg">
-            <Container>
                 <Form>
                     <div class="marginleft">
                         <Row form>
@@ -68,10 +65,8 @@ class Tanggalbeli extends Component {
                                 </div>
                             </Col>
                         </Row>
-                        
                         <div class="bulan">Januari 2019</div>
-                    </div>
-                    
+                    </div> 
                     <Col md={15}>
                         <ListGroup>
                             <ListGroupItem color="light">No. Pesanan 
@@ -81,9 +76,14 @@ class Tanggalbeli extends Component {
                             <ListGroupItem color="dark"><img src={Bandara}/>
                                 <div class="jarak">Ke Soekarno Hatta International Airport (CGK)</div>
                             </ListGroupItem>
-                            <ListGroupItem color="light">Pembelian Berhasil
-                                <div class="detail1">
-                                    <a href="">Lihat Detail  ...</a>
+                            <ListGroupItem color="light">
+                                <div class="groupstatus">
+                                    <div class="kotak"></div> 
+                                    <div class="berhasil">Pembelian Berhasil
+                                        <div class="detail1">
+                                            <a href="">Lihat Detail  ...</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </ListGroupItem>
                         </ListGroup>
@@ -98,9 +98,14 @@ class Tanggalbeli extends Component {
                                 <ListGroupItem color="dark"><img src={Hotel}/>
                                     <div class="jarak">Airy Eco Syariah Bandara Soetta Perumahan Bandara Mas satu Tangerang</div>
                                 </ListGroupItem>
-                                <ListGroupItem color="light">Pembelian Berhasil 
-                                    <div class="detail2">
-                                        <a href="">Lihat Detail  ...</a>
+                                <ListGroupItem color="light"> 
+                                    <div class="groupstatus">
+                                        <div class="kotak"></div> 
+                                        <div class="berhasil">Pembelian Berhasil
+                                            <div class="detail2">
+                                                <a href="">Lihat Detail  ...</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </ListGroupItem>
                             </ListGroup>
@@ -117,19 +122,19 @@ class Tanggalbeli extends Component {
                                     <div class="jarak">XL Axiata - XL Prioritas</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light">
-                                    <div class="kotak">
-                                    <div class="berhasil">Pembelian Berhasil</div>
-                                    </div> 
-                                     
-                                    <div class="detail3">
-                                        <a href="">Lihat Detail  ...</a>
+                                    <div class="groupstatus">
+                                        <div class="kotak"></div> 
+                                        <div class="berhasil">Pembelian Berhasil
+                                            <div class="detail3">
+                                                <a href="">Lihat Detail  ...</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
                     </div>
                 </Form>
-            </Container>
             </div>
         );
     }
