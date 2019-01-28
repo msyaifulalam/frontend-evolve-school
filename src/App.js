@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
+import Navigasi from './components/Navigasi/Navigasi';
+import Pencarian from './pages/Pencarian';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,  //or 'BrowserRouter as Router,'
@@ -12,8 +14,8 @@ import {
 } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
-import './components/Navigasi.css';
-import Navigasi from './components/Navigasi'
+import './components/Navigasi/Navigasi.css';
+
 
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component = {() => <Home/>}></Route>
               <Route path="/profile" component = {(match) => <Profile router = {match}/>}></Route>
+              <Route path="/pencarian" component = {(match) => <Pencarian router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
             </Switch>
           {/* </div> */}
@@ -35,3 +38,4 @@ class App extends Component {
   }
 
 export default App;
+

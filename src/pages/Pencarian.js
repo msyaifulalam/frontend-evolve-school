@@ -1,0 +1,182 @@
+import React, { Component } from 'react';
+import '../App.css';
+import './Pages.css';
+import {
+    Container,
+    Button,
+    Row,
+    Col,
+    Card,CardTitle,CardText,CardBody,CardImg,
+    Input,Label,FormGroup
+    } from 'reactstrap';
+import rate from '../components/assets/rate.svg';
+import lokasi from '../components/assets/lokasi.svg';
+
+export class Pencarian extends Component {
+  render() {
+    return (
+            <Container>
+                <Row>
+                    <Col>
+                    <h4>Hasil pencarian hotel di Jakarta, Indonesia</h4>
+                    <p>16 Jan 2019 - 17 Jan 2019</p>
+                    </Col>
+                    <Col><Button color="primary">Ganti Pencarian</Button></Col>
+                </Row><hr/>
+                <Row>
+                    <Col xs="4">
+                      <Card>
+                        <CardTitle>Urutkan Hasil Pencarian</CardTitle>
+                        <CardText>Urutkan hasil pencarian Anda berdasarkan:</CardText>
+                        <hr/>
+                        <FormGroup tag="fieldset">
+                          <FormGroup check>
+                            <Label check>
+                              <Input type="radio" name="radio1" />{' '}
+                              Harga tertinggi
+                            </Label>
+                            <Label check>
+                              <Input type="radio" name="radio2" />{' '}
+                              Harga terendah
+                            </Label> 
+                          </FormGroup>
+                          <FormGroup check>
+                            <Label check>
+                              <Input type="radio" name="radio3" />{' '}
+                              Nilai Ulasan
+                            </Label>
+                            <Label check>
+                              <Input type="radio" name="radio4" />{' '}
+                              Popularitas Tertinggi
+                            </Label> 
+                          </FormGroup>
+                        </FormGroup>
+                      </Card>
+
+                      <Card>
+                          <CardTitle>Filter Hasil Pencarian<Button color="link">Reset Filter</Button></CardTitle>
+                          <CardText>Menampilkan hasil berdasarkan kategori</CardText>
+                          <hr/>
+                          <CardTitle>Kisaran harga per malam</CardTitle>
+                          <FormGroup>
+                              <Input type="text" name="text" id="min" placeholder="Rp 0" />
+                              <hr/>
+                              <Input type="text" name="text" id="max" placeholder="Rp 15,000,000" />
+                          </FormGroup>
+                          <hr/>
+                          <CardTitle>Bintang</CardTitle>
+                          <FormGroup tag="fieldset">
+                            <FormGroup check>
+                              <Label check>
+                                <Input type="checkbox" name="rate1" />{' '}
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                            <FormGroup check>
+                              <Label check>
+                                <Input type="checkbox" name="rate2" />{' '}
+                                <img src={rate} />
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                            <FormGroup check>
+                              <Label check>
+                                <Input type="checkbox" name="rate3" />{' '}
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                            <FormGroup check>
+                              <Label check>
+                                <Input type="checkbox" name="rate4" />{' '}
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                            <FormGroup check>
+                              <Label check>
+                                <Input type="checkbox" name="rate5" />{' '}
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                          </FormGroup>
+                      </Card>
+                    </Col>
+
+                    <Col xs="8">
+                      <Card id="result">
+                        <Col xs="3">
+                          <CardImg top width="132px" height="176px" src="https://via.placeholder.com/150" alt="Card image cap" />
+                        </Col>
+                        <Col xs="6">
+                          
+                            <CardTitle>The Edelweiss Hotel Yogyakarta</CardTitle>
+                            <Button outline color="info">Hotel</Button>{' '}
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} /><br/>
+                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            
+                        </Col>
+                        <Col xs="3">
+                        <h4>Rp 328.000</h4>
+                        </Col>
+                      </Card>
+                      <Card id="result">
+                        <Col xs="3">
+                          <CardImg top width="132px" height="176px" src="https://via.placeholder.com/150" alt="Card image cap" />
+                        </Col>
+                        <Col xs="6">
+                          
+                            <CardTitle>Hotel New Saphir</CardTitle>
+                            <Button outline color="info">Hotel</Button>{' '}
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} /><br/>
+                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            
+                        </Col>
+                        <Col xs="3" border-left="1px">
+                        <h4>Rp 554.000</h4>
+                        </Col>
+                      </Card>
+                      <Card id="result">
+                        <Col xs="3">
+                          <CardImg top width="132px" height="176px" src="https://via.placeholder.com/150" alt="Card image cap" />
+                        </Col>
+                        <Col xs="6">
+                          
+                            <CardTitle>Horison Grand Keisha Yogyakarta</CardTitle>
+                            <Button outline color="info">Hotel</Button>{' '}
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} />
+                            <img src={rate} /><br/>
+                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            
+                        </Col>
+                        <Col xs="3">
+                        <h4>Rp 697.000</h4>
+                        </Col>
+                      </Card>
+                    </Col>
+                  
+                   
+                    </Row>
+            </Container>
+      
+      
+    )
+  }
+}
+
+export default Pencarian

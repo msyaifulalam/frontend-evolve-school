@@ -1,4 +1,6 @@
-
+body{
+    background-color:#eee !important;
+}
 
 .App-header{
     color: black;
@@ -8,3 +10,110 @@
     background-color: transparent;
 }
 
+.col{
+    margin-top: 10px;
+}
+
+.form-control{
+    margin:10px 10px;
+    display: inline-block !important;
+    width: 40% !important;
+    border-radius: 1rem !important;
+}
+input#min.form-control{
+    position: absolute;
+    top:155px;
+    left:0px;
+    height: 25px;
+}
+input#max.form-control{
+    position: absolute;
+    top:155px;
+    left:189px;
+    height: 25px;
+}
+.form-check-label{
+    width: 50%;
+}
+.form-check{
+    margin-bottom: 10px;
+}
+.card{
+    margin: 10px 0 !important;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.card-title{
+    font-weight: 500 
+}
+.card-title .btn{
+    padding-bottom: 4px;
+    padding-top: 0;
+    width: 167px;
+
+}
+
+button.btn{
+    width: 200px;
+    height: 34px;
+    float: right;
+
+}
+
+p.card-text{
+    width: 300px
+}
+input[type=radio]{
+    height: 15px;
+    width: 15px;
+}
+
+input[type=checkbox]{
+    height: 23px;
+    width: 16px;
+}
+
+img{
+    margin-left: 3px;
+}
+
+div#result.card{
+    flex-direction: row !important;
+    padding: 0px;
+    box-shadow: 0 0 0 0!important;
+    border-radius: 4px;
+}
+
+img.card-img-top{
+    margin: 0px;
+}
+
+div.col-3{
+    padding: 0;
+    border-left: 1px solid #ddd;
+}
+
+div.col-6{
+    padding: 10px
+}
+div.col-6 button.btn{
+    float: left;
+    border-radius: 50px;
+    width: 85px;
+    height: 25px;
+    padding: 0rem .75rem;
+    font-size: 0.8rem;
+}
+div.col-6 p.card-text{
+    float: left;
+    font-size: 1rem;
+    margin-top:5px;
+    color: gray
+}
+
+div.col-3 h4{
+    color: #f96d01;
+    padding-top:50%;
+    margin-left: 15px
+}
