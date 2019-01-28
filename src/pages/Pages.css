@@ -2,10 +2,10 @@ body{
     background-color:#eee !important;
 }
 
-.App-header{
+/* .App-header{
     color: black;
     background-color: #e6eaed;
-}
+} */
 .list-group-item{
     background-color: transparent;
 }
@@ -20,22 +20,22 @@ body{
     width: 40% !important;
     border-radius: 1rem !important;
 }
-input#min.form-control{
+input#min.form-control.price{
     position: absolute;
-    top:155px;
+    top:158px;
     left:0px;
-    height: 25px;
+    height: 30px;
 }
-input#max.form-control{
+input#max.form-control.price{
     position: absolute;
-    top:155px;
+    top:158px;
     left:189px;
-    height: 25px;
+    height: 30px;
 }
-.form-check-label{
+.form-check-label.search{
     width: 50%;
 }
-.form-check{
+.form-check.search{
     margin-bottom: 10px;
 }
 .card{
@@ -44,48 +44,46 @@ input#max.form-control{
     border-radius: 5px;
     
 }
-.card-title{
+.search.card-title{
     font-weight: 500 
 }
-.card-title .btn{
+.search.card-title .btn{
     padding-bottom: 4px;
     padding-top: 0;
     width: 167px;
 
 }
 
-button.btn{
+button.search.btn{
     width: 200px;
     height: 34px;
     float: right;
-
 }
 
 p.card-text{
     width: 300px
 }
-input[type=radio]{
+input[type=radio].search{
     height: 15px;
     width: 15px;
 }
 
-input[type=checkbox]{
+input[type=checkbox].rate{
     height: 23px;
-    width: 16px;
+    width: 15px;
 }
 
-img{
-    margin-left: 3px;
-}
+
 
 div#result.card{
     flex-direction: row !important;
     padding: 0px;
     box-shadow: 0 0 0 0!important;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-img.card-img-top{
+img.search.card-img-top{
     margin: 0px;
 }
 

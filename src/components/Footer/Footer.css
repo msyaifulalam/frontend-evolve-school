@@ -1,0 +1,132 @@
+  .footer {
+    background: rgb(44, 44, 44);
+    color: white;
+  }
+  .footer .img {
+    display: flex;
+    color: #ffffff;
+  }
+  .footer .img .text1 {
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .footer .img .text2 {
+    font-size: 15px;
+  }
+  
+  
+  /* kolom 2 */
+  .footer .About {
+    margin-top: 20px;
+    margin-left: 39px;
+    font-weight: bold;
+  }
+  .footer .list ul li {
+    margin-top: 8px;
+    font-size: 13px;
+    list-style-type: none;
+    text-align: left;
+  }
+  .footer .list ul li a:hover {
+    color: #ffffff;
+  }
+  .footer .list ul li a {
+    color: #7e7e7e;
+  }
+  
+  
+  /* kolom 3 */
+  .footer .follow {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .footer .follow .icon1 {
+    margin-top: 10px;
+    display: flex;
+  }
+  .footer .follow .icon1 .text1 {
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7e7e7e;
+  }
+  .footer .follow .icon1 .text1 a {
+    color: #7e7e7e;
+  }
+  .footer .follow .icon1 .text1 a:hover {
+    color: #ffffff;
+  }
+  .footer .follow .icon2 {
+    margin-top: 10px;
+    display: flex;
+  }
+  .footer .follow .icon2 .text2 {
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7e7e7e;
+  }
+  .footer .follow .icon2 .text2 a {
+    color: #7e7e7e;
+  }
+  .footer .follow .icon2 .text2 a:hover {
+    color: #ffffff;
+  }
+  .footer .follow .icon3 {
+    margin-top: 10px;
+    display: flex;
+  }
+  .footer .follow .icon3 .text3 {
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7e7e7e;
+  }
+  .footer .follow .icon3 .text3 a {
+    color: #7e7e7e;
+  }
+  .footer .follow .icon3 .text3 a:hover {
+    color: #ffffff;
+  }
+  .footer .follow .icon4 {
+    margin-top: 10px;
+    display: flex;
+  }
+  .footer .follow .icon4 .text4 {
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7e7e7e;
+  }
+  .footer .follow .icon4 .text4 a {
+    color: #7e7e7e;
+  }
+  .footer .follow .icon4 .text4 a:hover {
+    color: #ffffff;
+  }
+  
+  
+  /* kolom 4 */
+  .footer .download {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .footer .download .logo1 {
+    margin-top: 15px;
+  }
+  .footer .download .logo2 {
+    margin-top: 15px;
+  }
+  
+  /* end */
+  .footer .copyright {
+    padding : 24px 24px 5px;
+    line-height: 24px;
+    border-top: 1px solid;
+    border-top-color: #818181;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }

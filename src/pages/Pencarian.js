@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import '../App.css';
+
 import './Pages.css';
 import {
     Container,
     Button,
     Row,
     Col,
-    Card,CardTitle,CardText,CardBody,CardImg,
+    Card,CardTitle,CardText,CardImg,
     Input,Label,FormGroup
     } from 'reactstrap';
 import rate from '../components/assets/rate.svg';
@@ -21,7 +21,7 @@ export class Pencarian extends Component {
                     <h4>Hasil pencarian hotel di Jakarta, Indonesia</h4>
                     <p>16 Jan 2019 - 17 Jan 2019</p>
                     </Col>
-                    <Col><Button color="primary">Ganti Pencarian</Button></Col>
+                    <Col><Button color="primary" className='search'>Ganti Pencarian</Button></Col>
                 </Row><hr/>
                 <Row>
                     <Col xs="4">
@@ -30,75 +30,75 @@ export class Pencarian extends Component {
                         <CardText>Urutkan hasil pencarian Anda berdasarkan:</CardText>
                         <hr/>
                         <FormGroup tag="fieldset">
-                          <FormGroup check>
-                            <Label check>
-                              <Input type="radio" name="radio1" />{' '}
+                          <FormGroup check className='ulasan'>
+                            <Label check className='search'>
+                              <Input type="radio" name="radio1" className='search'/>{' '}
                               Harga tertinggi
                             </Label>
-                            <Label check>
-                              <Input type="radio" name="radio2" />{' '}
+                            <Label check className='search'>
+                              <Input type="radio" name="radio2" className='search'/>{' '}
                               Harga terendah
                             </Label> 
                           </FormGroup>
-                          <FormGroup check>
-                            <Label check>
-                              <Input type="radio" name="radio3" />{' '}
+                          <FormGroup check >
+                            <Label check className='search'>
+                              <Input type="radio" name="radio3" className='search'/>{' '}
                               Nilai Ulasan
                             </Label>
-                            <Label check>
-                              <Input type="radio" name="radio4" />{' '}
+                            <Label check className='search'>
+                              <Input type="radio" name="radio4" className='search'/>{' '}
                               Popularitas Tertinggi
                             </Label> 
                           </FormGroup>
                         </FormGroup>
                       </Card>
 
-                      <Card>
+                      <Card className='search'>
                           <CardTitle>Filter Hasil Pencarian<Button color="link">Reset Filter</Button></CardTitle>
                           <CardText>Menampilkan hasil berdasarkan kategori</CardText>
                           <hr/>
                           <CardTitle>Kisaran harga per malam</CardTitle>
                           <FormGroup>
-                              <Input type="text" name="text" id="min" placeholder="Rp 0" />
+                              <Input type="text" name="text" id="min" placeholder="Rp 0" className='price'/>
                               <hr/>
-                              <Input type="text" name="text" id="max" placeholder="Rp 15,000,000" />
+                              <Input type="text" name="text" id="max" placeholder="Rp 15,000,000" className='price'/>
                           </FormGroup>
                           <hr/>
                           <CardTitle>Bintang</CardTitle>
                           <FormGroup tag="fieldset">
-                            <FormGroup check>
+                            <FormGroup check className='search'>
                               <Label check>
-                                <Input type="checkbox" name="rate1" />{' '}
+                                <Input type="checkbox" name="rate1" className='rate'/>{' '}
                                 <img src={rate} />
                               </Label>
                             </FormGroup>
-                            <FormGroup check>
+                            <FormGroup check className='search'>
                               <Label check>
-                                <Input type="checkbox" name="rate2" />{' '}
-                                <img src={rate} />
-                                <img src={rate} />
-                              </Label>
-                            </FormGroup>
-                            <FormGroup check>
-                              <Label check>
-                                <Input type="checkbox" name="rate3" />{' '}
-                                <img src={rate} />
+                                <Input type="checkbox" name="rate2" className='rate'/>{' '}
                                 <img src={rate} />
                                 <img src={rate} />
                               </Label>
                             </FormGroup>
-                            <FormGroup check>
+                            <FormGroup check className='search'>
                               <Label check>
-                                <Input type="checkbox" name="rate4" />{' '}
-                                <img src={rate} />
+                                <Input type="checkbox" name="rate3" className='rate'/>{' '}
                                 <img src={rate} />
                                 <img src={rate} />
                                 <img src={rate} />
                               </Label>
                             </FormGroup>
-                            <FormGroup check>
+                            <FormGroup check className='search'>
                               <Label check>
-                                <Input type="checkbox" name="rate5" />{' '}
+                                <Input type="checkbox" name="rate4" className='rate'/>{' '}
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                                <img src={rate} />
+                              </Label>
+                            </FormGroup>
+                            <FormGroup check className='search'>
+                              <Label check>
+                                <Input type="checkbox" name="rate5" className='rate'/>{' '}
                                 <img src={rate} />
                                 <img src={rate} />
                                 <img src={rate} />

@@ -9,6 +9,7 @@ import pesawathotel from '../assets/pesawathotel.svg';
 import rekreasi from '../assets/rekreasi.svg';
 import tagihan from '../assets/tagihan.svg';
 import bandara from '../assets/bandara.svg';
+import './Navigasi.css';
 
 
 import {
@@ -25,7 +26,6 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
-  import '../Navigasi/Navigasi.css';
   import axios from 'axios';
 
 export class Navigasi extends Component {
@@ -56,15 +56,15 @@ export class Navigasi extends Component {
     return (
       <div>
         
-          <Navbar expand="md">
+          <Navbar id="navigasi" expand="md">
             <Container>
               <NavbarBrand href="/"><img src={burger} /> &nbsp; <img src={logo} /></NavbarBrand>
               <NavbarToggler  />
               <Collapse  navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <Button  outline color='danger'>Login</Button>             
-                    <Button  outline color='primary'>Daftar</Button>
+                    <Button className='navigasi' outline color='danger'>Login</Button>             
+                    <Button className='navigasi' outline color='primary'>Daftar</Button>
                   </NavItem>
                 </Nav>
               </Collapse>
