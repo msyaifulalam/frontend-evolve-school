@@ -1,23 +1,45 @@
-/* .App-header{
-    color: black;
-    background-color:  rgb(244, 245, 245);
-} */
-
 .bg {
-    background-color: rgb(244, 245, 245);
+    /* background-color: #e7e8e9; */
+    background-color: transparent;
 }
-
+.bg .card-body {
+    background-color: transparent;
+    border: none;
+}
+img {
+    padding-bottom: 5px;
+}
+.bg .col-md-6 {
+    max-width: 46%;
+}
+.bg .col-md-15 {
+    max-width: 92%;
+}
 /* sejajarkiri */
 .bg .marginleft {
     margin-left: 2px;
 }
 
 /* tanggal dari */
+.bg .form-group {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    display: grid;
+}
 .bg .form-control {
     border: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 20px;
+    color: rgb(163, 163, 163);
+    font-weight: 450;
+    font-size: 15px;
 }
 .bg .marginleft .putih .ratakiri {
     margin-left: 15px;
+}
+.form-group label {
+    margin-bottom: 0px;
 }
 .bg .marginleft .putih {
     background: rgb(255, 255, 255);
@@ -27,7 +49,7 @@
 }
 .bg .marginleft .putih .textdari {
     margin-left: 50px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     color: rgb(163, 163, 163);
 }
@@ -36,7 +58,7 @@
 /* tanggal sampai */
 .bg .marginleft .putih .textsampai {
     margin-left: 50px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     color: rgb(163, 163, 163);
 }
@@ -44,16 +66,47 @@
 .bg .marginleft .bulan {
     padding-top: 30px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: rgb(114, 114, 114);
 }
 
-/* listgroup 1 */
+/* untuk logo image ceklist */
+.bg .list-group-item .groupstatus {
+    display: flex;
+}
+.bg .list-group-item .groupstatus .kotak {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asset/check-icon.png");
+    background-size: cover;
+}
+.bg .list-group-item .groupstatus .berhasil {
+    margin-left: 10px;
+    display: flex;
+}
+
+/* group list-item*/
 .bg .list-group-item {
     display: flex;
-    font-size: 15px;
 }
+.bg .list-group-item-light {
+    background-color: #ffffff;
+    color: #969696;
+    font-size: 14px;
+}
+.bg .list-group-item-dark {
+    background-color: rgb(247, 247, 247);
+    color: #969696;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bg .list-group-item .groupstatus .berhasil {
+    font-weight: bold;
+}
+
+
+/* listgroup 1 */
 .bg .list-group-item .jarak {
     margin-left: 10px;
 }
@@ -62,68 +115,50 @@
     font-weight: bold;
 }
 .bg .list-group-item .harga1 {
-    margin-left: 400px;
+    margin-left: 392px;
     font-weight: bold;
 }
-.bg .list-group-item .detail1 {
+.bg .list-group-item .groupstatus .berhasil .detail1 {
     color: rgb(68, 139, 231);
-    margin-left: 423px;
+    margin-left: 370px;
     font-weight: bold;
 }
 
+/* untuk jarak antar listgroup */
 .bg .spasi {
     margin-top: 10px;
 }
 
 /* listgroup 2 */
-.bg .list-group-item {
-    display: flex;
-    font-size: 15px;
-}
 .bg .list-group-item .pesanan2 {
     margin-left: 4px;
     font-weight: bold;
 }
 .bg .list-group-item .harga2 {
-    margin-left: 400px;
+    margin-left: 392px;
     font-weight: bold;
 }
-.bg .list-group-item .detail2 {
+.bg .list-group-item .groupstatus .berhasil .detail2 {
     color: rgb(68, 139, 231);
-    margin-left: 423px;
+    margin-left: 370px;
     font-weight: bold;
 }
 
 /* listgroup 3 */
-.bg .list-group-item {
-    display: flex;
-    font-size: 15px;
-}
 .bg .list-group-item .pesanan3 {
     margin-left: 4px;
     font-weight: bold;
 }
 .bg .list-group-item .harga3 {
-    margin-left: 400px;
+    margin-left: 392px;
     font-weight: bold;
 }
-.bg .list-group-item .detail3 {
+.bg .list-group-item .groupstatus .berhasil .detail3 {
     color: rgb(68, 139, 231);
-    margin-left: 423px;
+    margin-left: 370px;
     font-weight: bold;
 }
-.bg .list-group-item .kotak {
-    display: flex;
-    width: 40px;
-    height: 20px;
-    background-image: url("../../asset/img/check-icon.png");
-    background-size: cover;
-}
-.bg .list-group-item .kotak .berhasil {
-    /* display: flex;
-    width: 100%; */
-    margin-left: 50px;
-}
+
 
 
 

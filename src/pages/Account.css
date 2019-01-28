@@ -7,3 +7,10 @@
     background-color: transparent;
     box-shadow: unset;
 }
+.list-group-item{
+    background-color: transparent;
+}
+.card.nobackground {
+    background-color: transparent;
+    border: none;
+}
