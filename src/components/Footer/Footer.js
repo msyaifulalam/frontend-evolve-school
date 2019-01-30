@@ -28,11 +28,11 @@ class Footer extends Component {
     }
         
     componentDidMount(){
-        axios.all([
+        axios.all([ //penggunaan 2 axios
             axios.get('https://backend-evolve.herokuapp.com/footers/about'),
             axios.get('https://backend-evolve.herokuapp.com/footers/sosmed')
         ])
-        .then(axios.spread ((footersRes,sosmedsRes) => {
+        .then(axios.spread ((footersRes,sosmedsRes) => { //untuk menampilkan 2 API sekaligus
             console.log(footersRes);
             console.log(sosmedsRes);
             this.setState({
@@ -79,7 +79,8 @@ class Footer extends Component {
                                 <div className="icon2" key={sosmed.id}>
                                     <img src={sosmed.icon}/>
                                     <div className="text2">
-                                        <a href={sosmed.path_url}>{sosmed.name}</a>
+                                        <a href =""> <div className="svg" dangerouslySetInnerHTML={{__html:sosmed.path_url}}></div> {sosmed.name}</a>
+                                        
                                     </div>
                                 </div>    
                             )}
