@@ -1,45 +1,26 @@
 import React, { Component } from 'react';
 import './Profile.css';
-import axios from 'axios';
 import { connect } from 'react-redux';
-import { getProfile } from '../../action/action';
+import { fetchProfile } from '../../action/action';
 
 class Profile extends Component {
     constructor(props){
         super(props);
         this.state = {
-            nama_depan: [],
-            nama_belakang: [],
-            hp: [],
-            email: [],
+            nama_depan: '',
+            nama_belakang: '',
+            hp: '',
+            email: '',
         };
     }
     componentDidMount(){
-        axios.get('http://demo2118348.mockable.io/profile')
-        .then(response => {
-            console.log(response);
-            this.setState({
-                nama_depan: response.data.data.nama_depan,
-                nama_belakang: response.data.data.nama_belakang,
-                hp: response.data.data.handphone,
-                email: response.data.data.email
-            }, () => this.profile())
-        }).catch(err => {
-            console.log(err);
-        });
+        this.props.getProf();
     }
 
-    profile(){
-        const profileDetail = {
-            nama_depan: this.state.nama_depan,
-            nama_belakang: this.state.nama_belakang,
-            hp: this.state.hp,
-            email: this.state.email
-        }
-        this.props.save(profileDetail);
-    }
+    
 
     render() {
+        console.log(this.props.profileDetail);
         return (
             <div>
                 <div className="textBox">
@@ -58,7 +39,7 @@ class Profile extends Component {
                         <div className="icon">
                             <svg stroke-width="0" fill="#8F8F8F" height="24" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke-width="0"><rect width="24" height="24"></rect><path stroke="#8F8F8F" stroke-width="2" d="M8.79293565,14 L15.2068466,14 L15.2068466,14 C17.5134696,14 19.4615386,15.7124173 19.7573005,18 L19.9827249,19.7435542 L19.9827249,19.7435542 C20.124356,20.8390059 19.3511317,21.8418596 18.25568,21.9834907 C18.1706403,21.9944855 18.0849816,22 17.9992342,22 L6.00054804,22 L6.00054804,22 C4.89597854,22 4.00054804,21.1045695 4.00054804,20 C4.00054804,19.9142525 4.0060625,19.8285938 4.01705729,19.7435542 L4.24248169,18 L4.24248169,18 C4.53824361,15.7124173 6.48631263,14 8.79293565,14 Z"></path><path stroke="#8F8F8F" stroke-width="2" d="M11,2 L13,2 L13,2 C14.6568542,2 16,3.34314575 16,5 L16,7 L16,7 C16,9.209139 14.209139,11 12,11 L12,11 L12,11 C9.790861,11 8,9.209139 8,7 L8,5 L8,5 C8,3.34314575 9.34314575,2 11,2 Z"></path></g></svg>
                         </div>
-                        <div className="editProfileTitle">{this.state.nama_depan}{` `}{this.state.nama_belakang}</div>
+                        <div className="editProfileTitle">{this.props.profileDetail.nama_depan}{` `}{this.state.nama_belakang}</div>
                     </div>
                 </div>
                 <div className="textBox">
@@ -175,13 +156,11 @@ class Profile extends Component {
 }
 
 const propsRedux = dispatch => ({
-    save: profileDetail => {
-        console.log(profileDetail)
-        dispatch(getProfile(profileDetail))
-    }
+    getProf: () => dispatch(fetchProfile())
 });
 
-// const stateRedux = state => ({});
+const stateRedux = state => ({
+    profileDetail: state.profDet.profile
+});
 
-export default connect(null, propsRedux) (Profile);
-// export default Profile;
+export default connect(stateRedux, propsRedux) (Profile);

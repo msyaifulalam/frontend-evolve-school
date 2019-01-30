@@ -1,5 +1,11 @@
-export const GET_PROFILE = 'GET_PROFILE';
+import axios from 'axios';
+import { fetchProfDetails } from '../api/profile';
 
-export function getProfile(profileDetail) {
-    return { type: GET_PROFILE, profileDetail }
+export const FETCH_PROFILE = 'FETCH_PROFILE';
+
+export function fetchProfile() {
+    return {
+        type: FETCH_PROFILE,
+        profileDetail: fetchProfDetails()
+    };
 }
