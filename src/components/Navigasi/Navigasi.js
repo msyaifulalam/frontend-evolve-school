@@ -19,12 +19,9 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     Button,
     Container,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+   } from 'reactstrap';
 
   import axios from 'axios';
 
@@ -50,9 +47,6 @@ export class Navigasi extends Component {
   }
   
   render() {
-    
-    
-   
     return (
       <div>
         
