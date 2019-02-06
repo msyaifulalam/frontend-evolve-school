@@ -69,18 +69,18 @@ export default class Hoteldetail extends Component {
                             <Col md={9}>
                                 <div className="carousel mt-3" >
                                     <img alt="carousel" style={{width:'630px', height:'360px'}}
-                                    src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000088824_wh_6" alt="#"></img>
+                                    src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000088824_wh_6"></img>
                                 </div>
                                 <div className="thumbnail">
                                     <div className="thumbnail-img mt-2">
                                         <img alt="thumbnail" style={{width:'165px', height:'116px'}}
-                                        src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000076416_t2_7" alt="#" className="img-thumbnail"></img>
+                                        src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000076416_t2_7" className="img-thumbnail"></img>
 
-                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000088824_t2_6" alt="#" className="img-thumbnail"></img>
+                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000088824_t2_6" className="img-thumbnail"></img>
 
-                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000121498_t2_7" alt="#" className="img-thumbnail"></img>
+                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000121498_t2_7" className="img-thumbnail"></img>
 
-                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000076416_t2_7" alt="#" className="img-thumbnail"></img>
+                                        <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000076416_t2_7" className="img-thumbnail"></img>
                                     </div>
                                 </div>
                             </Col>

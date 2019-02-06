@@ -1,5 +1,5 @@
 import React ,{ Component } from 'react';
-import { Row, Col, FormGroup, Label, Input, InputGroup, InputGroupAddon, Table } from 'reactstrap';
+import { Row, Col, FormGroup, Label, Input, InputGroup, InputGroupAddon } from 'reactstrap';
 import { Button } from 'reactstrap';
 import LastView from '../../../asset/Forms-svg/LastView.svg';
 import Location from '../../../asset/Forms-svg/Location.svg';
