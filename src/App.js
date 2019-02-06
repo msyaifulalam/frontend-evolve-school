@@ -4,7 +4,6 @@ import store from './store';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Pencarian from './pages/Pencarian';
-import Navigasi from './components/Navigasi/Navigasi';
 import Account from './pages/Account';
 import  Hoteldetail from './pages/Hoteldetail';
 import HotelRoom from './pages/HotelRoom/HotelRoom';
