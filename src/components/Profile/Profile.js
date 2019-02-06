@@ -149,7 +149,7 @@ class Profile extends Component {
                         </div>
                         <div className="textLink">Link Account</div>
                     </div>
-                </div>
+                </div>   
             </div>
         );
     }

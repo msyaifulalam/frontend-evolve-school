@@ -7,6 +7,7 @@ import Pencarian from './pages/Pencarian';
 import Account from './pages/Account';
 import  Hoteldetail from './pages/Hoteldetail';
 import HotelRoom from './pages/HotelRoom/HotelRoom';
+import PemesananHotel from './components/PemesananHotel/PesanHotel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,  //or 'BrowserRouter as Router,'
@@ -29,6 +30,7 @@ class App extends Component {
               <Route path="/pencarian" component = {(match) => <Pencarian router = {match}/>}></Route>
               <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
               <Route path="/hotelroom" component = {(match) => <HotelRoom router = {match}/>}></Route>
+              <Route path="/pemesananhotel" component = {(match) => <PemesananHotel router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
             </Switch>
           {/* </div> */}
