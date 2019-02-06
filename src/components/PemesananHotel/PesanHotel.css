@@ -1,4 +1,7 @@
 /* container */
+.pesanhotel {
+    background-color:rgb(228, 228, 228);
+}
 .pesanhotel .container {
     padding-top: 15px;
     color:  rgb(75, 75, 75);
@@ -160,16 +163,15 @@
 }
 
 /* svg wifi gratis */
-.wifi {
+.wipi {
     margin-left: 25px;
     margin-top: 9px;
     display: flex;
 }
-.wifi img {
+.wipi img {
     height: 17px;
-    margin-top: 3px; 
 }
-.wifi .wifi_gratis {
+.wipi .wifi_gratis {
     margin-left: 7px;
     font-size: 14px;
     color: rgb(37, 187, 75);
@@ -177,9 +179,11 @@
 
 /* garis putus-putus */
 .border .garis1 {
+    margin-top: 15px;
     margin-left: 38px;
     margin-right: 38px;
-    color: rgb(170, 170, 170);
+    margin-bottom: 20px;
+    border-bottom: 1px dashed rgb(170, 170, 170);
 }
 
 /* group baris 3 */
@@ -207,7 +211,7 @@
 }
 .line3 .out {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .out .value3 {
     margin-left: 88px;
@@ -230,7 +234,7 @@
 }
 .line4 .tipe1 {
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .tipe1 .tipe_kamar {

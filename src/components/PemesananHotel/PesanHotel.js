@@ -79,11 +79,11 @@ class PesanHotel extends Component {
                                                 <div className="nama">Jakarta Airport Hotel Managed by Topotels</div>
                                             </div>
                                         </div>
-                                        <div className="wifi">
+                                        <div className="wipi">
                                             <img src={Wifi} alt="logo-wifi"/>                                       
                                             <div className="wifi_gratis">Wifi Gratis</div>
                                         </div>
-                                        <div className="garis1">------------------------------------------</div>
+                                        <div className="garis1"></div>
                                         <div className="line3">
                                             <ul>
                                                 <li>
