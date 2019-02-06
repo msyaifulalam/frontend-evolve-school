@@ -73,9 +73,10 @@ class Footer extends Component {
                         <div className="follow" >Follow kami di 
                             {this.state.sosmeds.map((sosmed) =>
                                 <div className="icon2" key={sosmed.id}>
-                                    <img src={sosmed.icon} alt="sosial-media"/>
+                                    <div className="svg" dangerouslySetInnerHTML={{__html:sosmed.icon}}></div>
+                                    {/* <img src={sosmed.icon} alt="sosial-media"/> */}
                                     <div className="text2">
-                                        <a href =""> <div className="svg" dangerouslySetInnerHTML={{__html:sosmed.path_url}}></div> {sosmed.name}</a>
+                                        <a href ={sosmed.path_url}>{sosmed.name}</a>
                                         
                                     </div>
                                 </div>    
