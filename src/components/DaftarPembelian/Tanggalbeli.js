@@ -28,18 +28,22 @@ class Tanggalbeli extends Component {
                             <Col md={6}>
                                 <div className="putih">
                                     <FormGroup>
-                                        <Label for="exampleDate">
-                                            <div className="textdari">Dari</div>
-                                        </Label>
                                         <div className="ratakiri">
                                             <InputGroup>
-                                                <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
-                                                <Input 
-                                                    type="date"
-                                                    name="date"
-                                                    id="exampleDate"
-                                                    placeholder="Tue, Dec 18, 2018"
-                                                    />
+                                                <div className="grouptgl">
+                                                    <div className="logotgl">
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
+                                                            <div className="textdari">Dari
+                                                                <Input 
+                                                                    type="date"
+                                                                    name="date"
+                                                                    id="exampleDate"
+                                                                    placeholder="Tue, Dec 18, 2018"
+                                                                    />
+                                                            </div>
+                                                        </InputGroupAddon>
+                                                    </div>
+                                                </div>
                                             </InputGroup>
                                         </div>
                                     </FormGroup>
@@ -48,17 +52,22 @@ class Tanggalbeli extends Component {
                             <Col md={6}>
                                 <div className="putih">
                                     <FormGroup>
-                                        <Label for="exampleDate">
-                                            <div className="textsampai">Sampai</div>
-                                        </Label>
                                         <div className="ratakiri">
                                             <InputGroup>
-                                                <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
-                                                <Input
-                                                    type="date"
-                                                    name="date"
-                                                    id="exampleDate"
-                                                    placeholder="Wed, Jan 16, 2019"/>
+                                                <div className="grouptgl">
+                                                    <div className="logotgl">
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
+                                                            <div className="textsampai">Sampai
+                                                                <Input
+                                                                    type="date"
+                                                                    name="date"
+                                                                    id="exampleDate"
+                                                                    placeholder="Wed, Jan 16, 2019"
+                                                                    />
+                                                            </div>
+                                                        </InputGroupAddon>
+                                                    </div>
+                                                </div>
                                             </InputGroup>
                                         </div>
                                     </FormGroup>

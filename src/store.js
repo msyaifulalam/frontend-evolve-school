@@ -1,6 +1,6 @@
 import { createStore } from 'redux' 
-import getProf from './redusers/Profile'
+import fetchingProf from './reducers/Profile'
 
-const store = createStore(getProf)
+const store = createStore(fetchingProf)
 
 export default store;
