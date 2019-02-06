@@ -13,10 +13,6 @@ import pict4 from '../../asset/logo2.svg';
 import pict5 from '../../asset/logo3.svg'; 
 import android from '../../asset/googleplay.svg';
 import apple from '../../asset/appstore.svg';
-import twitter from '../../asset/twitter.svg';
-import facebook from '../../asset/facebook.svg';
-import instagram from '../../asset/instagram.svg';
-import googleplus from '../../asset/google+.svg';
 
 class Footer extends Component {
     constructor(props) {
