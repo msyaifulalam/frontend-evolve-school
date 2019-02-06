@@ -32,13 +32,13 @@ export default class Fill extends Component {
         return (
           <div className="hotel-form">
             <form>
-              <div class="tagline-1">
-                <img src={LastView}/>
+              <div className="tagline-1">
+                <img alt="lastview" src={LastView}/>
                 <span className="ml-2">Hotel yang Terakhir Dilihat</span>
               </div>
-              <div class="fill">
-                <div class="fill-row">
-                  <div class="first-row">
+              <div className="fill">
+                <div className="fill-row">
+                  <div className="first-row">
                     <Row form>
                       <Col md={8}>
                         <FormGroup>
@@ -64,7 +64,7 @@ export default class Fill extends Component {
                     </Row>
                   </div>
 
-                  <div class="second-row">
+                  <div className="second-row">
                     <Row form>
                       <Col md={3}>
                         <FormGroup>
@@ -122,18 +122,18 @@ export default class Fill extends Component {
                     </Row>
                   </div>
 
-                  <div class="third-row mt-2">
+                  <div className="third-row mt-2">
                     <Row form>
                       <Col md={3} >
-                        <img src={Payment}/>
+                        <img alt="payment" src={Payment}/>
                         <span className="ml-2 tagline-2">Bayar di Hotel</span>
                       </Col>
                       <Col md={5}>
-                        <img src={BestPrice}/>
+                        <img alt="bestprice" src={BestPrice}/>
                         <span className="ml-2 tagline-2">Traveloka best price guarantee</span>
                       </Col>
                       <Col md={4}>
-                        <Button color="warning" className="search-hotel"><img className="mr-2" src={Search}/>Cari hotel</Button>{''}
+                        <Button color="warning" className="search-hotel"><img alt="search" className="mr-2" src={Search}/>Cari hotel</Button>{''}
                       </Col>
                     </Row>
                   </div>
