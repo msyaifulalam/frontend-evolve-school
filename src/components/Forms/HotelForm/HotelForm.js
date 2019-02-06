@@ -133,7 +133,7 @@ export default class Fill extends Component {
                           <span className="ml-2 tagline-2">Traveloka best price guarantee</span>
                         </Col>
                         <Col md={4}>
-                          <Button color="warning"><img className="mr-2" src={Search}/>Cari hotel</Button>{''}
+                          <Button color="warning" className="search-hotel"><img className="mr-2" src={Search}/>Cari hotel</Button>{''}
                         </Col>
                       </Row>
                     </div>

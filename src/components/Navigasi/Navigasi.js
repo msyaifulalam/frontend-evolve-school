@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
 import burger from '../assets/burger.svg';
-import pesawat from '../assets/pesawat.svg';
-import bus from '../assets/bus.svg';
-import kereta from '../assets/kereta.svg';
-import hotel from '../assets/hotel.svg';
-import pesawathotel from '../assets/pesawathotel.svg';
-import rekreasi from '../assets/rekreasi.svg';
-import tagihan from '../assets/tagihan.svg';
-import bandara from '../assets/bandara.svg';
 import './Navigasi.css';
 
 
@@ -19,12 +11,9 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     Button,
     Container,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+   } from 'reactstrap';
 
   import axios from 'axios';
 
@@ -50,9 +39,6 @@ export class Navigasi extends Component {
   }
   
   render() {
-    
-    
-   
     return (
       <div>
         
@@ -64,7 +50,7 @@ export class Navigasi extends Component {
                 <Nav className="ml-auto" navbar>
                   <NavItem>
                     <Button className='navigasi' outline color='danger'>Login</Button>             
-                    <Button className='navigasi' outline color='primary'>Daftar</Button>
+                    <Button className='navigasi' outline color='primary'>Register</Button>
                   </NavItem>
                 </Nav>
               </Collapse>
