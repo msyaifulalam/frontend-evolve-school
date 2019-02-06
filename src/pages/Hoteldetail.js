@@ -5,6 +5,8 @@ import './Hoteldetail.css';
 import HotelRoom from './HotelRoom/HotelRoom';
 import './HotelRoom/HotelRoom.css';
 import axios from 'axios';
+import Navigasi from '../components/Navigasi/Navigasi';
+import Footer from '../components/Footer/Footer';
 
 export default class Hoteldetail extends Component {
     constructor(props){
@@ -50,8 +52,9 @@ export default class Hoteldetail extends Component {
     }
 
     render () {
-        return (
+        return ( 
         <div>
+        <div className="Navigasi"><Navigasi/></div>
             <div className="detailhotel">
                 <div className="hoteldetail">
                     <div className="isi">
@@ -164,6 +167,8 @@ export default class Hoteldetail extends Component {
             </div>
             
             <div className="room"><HotelRoom/></div>
+
+            <div className="footer"><Footer/></div>
         </div>
         );
     }

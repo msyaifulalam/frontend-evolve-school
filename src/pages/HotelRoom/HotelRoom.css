@@ -2,6 +2,10 @@ body {
     background-color: #e6eaed!important
 }
 
+.room {
+    margin-bottom: 50px;
+}
+
 .hotelroom { 
     position: relative;
     background-color: white;
