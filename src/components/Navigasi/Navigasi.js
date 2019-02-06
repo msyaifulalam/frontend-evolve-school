@@ -15,6 +15,8 @@ import {
     Container,
    } from 'reactstrap';
 
+  import { Link } from 'react-router-dom'
+
   import axios from 'axios';
 
 export class Navigasi extends Component {
@@ -49,8 +51,10 @@ export class Navigasi extends Component {
               <Collapse  navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <Button className='navigasi' outline color='danger'>Login</Button>             
-                    <Button className='navigasi' outline color='primary'>Register</Button>
+                    <Button className='navigasi' outline color='danger'>Login</Button>
+                    <Link to='/profile'>
+                      <Button className='navigasi' outline color='primary'>Profile</Button>
+                    </Link>             
                   </NavItem>
                 </Nav>
               </Collapse>

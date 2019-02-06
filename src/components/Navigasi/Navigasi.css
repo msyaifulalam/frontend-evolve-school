@@ -16,11 +16,11 @@
 }
 
 button.navigasi.btn{
-    width: 78px;
+    
     height: 30px;
     float: right;
     border-radius: 15px;
-    padding: 0rem .75rem
+    padding: 0rem 1.2rem
     
 }
 .logo{
