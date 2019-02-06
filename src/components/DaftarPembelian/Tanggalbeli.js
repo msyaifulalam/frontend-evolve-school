@@ -31,7 +31,7 @@ class Tanggalbeli extends Component {
                                             <InputGroup>
                                                 <div className="grouptgl">
                                                     <div className="logotgl">
-                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal} alt="tanggal"/>
                                                             <div className="textdari">Dari
                                                                 <div className="tgl">
                                                                 <Input 
@@ -57,7 +57,7 @@ class Tanggalbeli extends Component {
                                             <InputGroup>
                                                 <div className="grouptgl">
                                                     <div className="logotgl">
-                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal} alt="tanggal"/>
                                                             <div className="textsampai">Sampai
                                                                 <div className="tgl">
                                                                 <Input
@@ -85,7 +85,7 @@ class Tanggalbeli extends Component {
                                 <div className="pesanan1">411059742</div>
                                 <div className="harga1">Rp 125.742</div>
                             </ListGroupItem>
-                            <ListGroupItem color="dark"><img src={Bandara}/>
+                            <ListGroupItem color="dark"><img src={Bandara} alt="icon-bandara"/>
                                 <div className="jarak">Ke Soekarno Hatta International Airport (CGK)</div>
                             </ListGroupItem>
                             <ListGroupItem color="light">
@@ -107,7 +107,7 @@ class Tanggalbeli extends Component {
                                     <div className="pesanan2">411018548</div>
                                     <div className="harga2">Rp 131.548</div> 
                                 </ListGroupItem>
-                                <ListGroupItem color="dark"><img src={Hotel}/>
+                                <ListGroupItem color="dark"><img src={Hotel} alt="icon-hotel"/>
                                     <div className="jarak">Airy Eco Syariah Bandara Soetta Perumahan Bandara Mas satu Tangerang</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light"> 
@@ -130,7 +130,7 @@ class Tanggalbeli extends Component {
                                     <div className="pesanan3">411012196</div>
                                     <div className="harga3">Rp 165.196</div>
                                 </ListGroupItem>
-                                <ListGroupItem color="dark"><img src={Tagihan}/>
+                                <ListGroupItem color="dark"><img src={Tagihan} alt="icon-tagihan"/>
                                     <div className="jarak">XL Axiata - XL Prioritas</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light">

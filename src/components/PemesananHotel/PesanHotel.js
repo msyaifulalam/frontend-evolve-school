@@ -80,7 +80,7 @@ class PesanHotel extends Component {
                                             </div>
                                         </div>
                                         <div className="wifi">
-                                            <img src={Wifi}/>                                       
+                                            <img src={Wifi} alt="logo-wifi"/>                                       
                                             <div className="wifi_gratis">Wifi Gratis</div>
                                         </div>
                                         <div className="garis1">------------------------------------------</div>
