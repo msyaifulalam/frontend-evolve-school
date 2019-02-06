@@ -1,0 +1,199 @@
+body {
+    background-color: #e6eaed!important
+}
+
+.hotelroom { 
+    position: relative;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    width: 960px;
+    height: 180px;
+    padding : 16px 16px 16px 24px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
+}
+
+.hotelroom:hover {
+    -webkit-transition: width .1s ease-in,border-radius .3s ease,box-shadow .3s ease;
+    transition: width .1s ease-in,border-radius .3s ease,box-shadow .3s ease;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(27,27,27,.1);
+    box-shadow: 0 4px 20px 0 rgba(27,27,27,.1);
+    width: 965px;
+}
+
+.roomName {
+    display: flex;
+}
+
+.detail {
+    text-align: end;
+    margin-top: 20px;
+    position: initial;
+}
+
+.detailBed {
+    margin-left: 10px;
+}
+
+.bedName {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.guest {
+    width: 78px;
+    height: 18px;
+}
+
+.twinBed {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.svgGuest {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 3px;
+    color: #8f8f8f;
+}
+
+.qtyGuest {
+    height: 100%;
+    font-size: 14px;
+    color: #8f8f8f;
+    display: inline-block;
+}
+
+.svgTwin {
+    height: 14px;
+    margin-left: -5px;
+    display: inline-block;
+    color: #8f8f8f;
+}
+
+.qtyTwin {
+    font-size: 14px;
+    color: #8f8f8f;
+    display: inline-block; 
+}
+
+.refund , .breakfast , .wifi {
+    display: inline-block;
+    width: 333px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+svg.svgRefund , svg.svgBreakfast , .svgWifi {
+    display: inline-block;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: auto;
+    /* position: fixed; */
+}
+
+.noRefund , .choiceBreakfast , .network {
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #434343;
+    /* position: fixed; */
+}
+
+.network , .svgWifi {
+    color: #00a651;
+}
+
+.info , .svgWorld {
+    display: inline-block;
+}
+
+.svgWorld {
+    height: auto;
+    width: 14px;
+    margin-top: 5px;
+}
+
+.subInfo {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #434343;
+}
+
+.priceRoom {
+    color: #8f8f8f;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.priceroom {
+    line-height: 14px;
+    text-decoration: line-through;
+}
+
+.roomPrice {
+    color: #f96d01;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.tax {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.taxes {
+    display: inline-block;
+    color: #0770cd;
+}
+
+.point {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8f8f8f;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+.points {
+    color: #1ba0e2;
+}
+
+.svgPoint {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    /* vertical-align: middle; */
+}
+
+.booking > button {
+    width: 168px;
+    padding: 8px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .1s ease;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 50px; 
+}
+
+.roomAvailable {
+    color: #f34646;
+    font-size: 12px;
+    width: 168px;
+    font-weight: 700;
+    text-align: center;
+    position: inherit;
+}

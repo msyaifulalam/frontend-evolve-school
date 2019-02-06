@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Account from './pages/Account';
 import  Hoteldetail from './pages/Hoteldetail';
-import Carousels from './pages/Carousels';
+import HotelRoom from './pages/HotelRoom/HotelRoom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,  //or 'BrowserRouter as Router,'
@@ -25,7 +25,7 @@ class App extends Component {
               <Route exact path="/" component = {() => <Home/>}></Route>
               <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
               <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
-              <Route path="/carousels" component = {(match) => <Carousels router = {match}/>}></Route>
+              <Route path="/hotelroom" component = {(match) => <HotelRoom router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
             </Switch>
           {/* </div> */}

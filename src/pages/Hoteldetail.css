@@ -1,6 +1,3 @@
-/* * {
-    background-color: #dddddd;
-} */
 
 .box-facility, .thumbnail-img {
     display: flex;
@@ -34,18 +31,23 @@
     text-transform: uppercase;
 }
 
+.room {
+    margin-top: 50px;
+}
+
 .detailhotel {
     display: flex;
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
     /* position : absolute; */
 }
 
 .hoteldetail {
     flex : nowrap;
-    width: 900px;
+    width: 960px;
     position: relative;
     margin: auto;
     background-color: rgb(255, 255, 255);  
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
 } 
 
 .isi {
@@ -68,4 +70,13 @@ p.mt-2 {
     font-size: 24px;
     color: #1ba0e2;
     font-weight: 600;
+}
+
+.sideInfo.col-3.col-md-3 {
+    margin-left: -50px;
+}
+
+.card {
+    width: 264px;
+    height: auto;
 }
