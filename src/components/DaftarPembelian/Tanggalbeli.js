@@ -3,7 +3,6 @@ import '../../App.css';
 import '../DaftarPembelian/Daftarbeli.css';
 import {
     FormGroup,
-    Label,
     Input,
     Form,
     Row,
@@ -34,12 +33,14 @@ class Tanggalbeli extends Component {
                                                     <div className="logotgl">
                                                         <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
                                                             <div className="textdari">Dari
+                                                                <div className="tgl">
                                                                 <Input 
                                                                     type="date"
                                                                     name="date"
                                                                     id="exampleDate"
                                                                     placeholder="Tue, Dec 18, 2018"
                                                                     />
+                                                                </div>
                                                             </div>
                                                         </InputGroupAddon>
                                                     </div>
@@ -58,12 +59,14 @@ class Tanggalbeli extends Component {
                                                     <div className="logotgl">
                                                         <InputGroupAddon addonType="prepend"><img src={Tanggal}/>
                                                             <div className="textsampai">Sampai
+                                                                <div className="tgl">
                                                                 <Input
                                                                     type="date"
                                                                     name="date"
                                                                     id="exampleDate"
                                                                     placeholder="Wed, Jan 16, 2019"
                                                                     />
+                                                                </div>
                                                             </div>
                                                         </InputGroupAddon>
                                                     </div>
