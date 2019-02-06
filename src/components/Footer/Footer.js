@@ -50,18 +50,18 @@ class Footer extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <img src={pict1}/>
+                        <img src={pict1} alt="logo-traveloka"/>
                         <br/>
                         <div className="img">
-                            <img src={pict2}/>
+                            <img src={pict2} alt="logo-24"/>
                             <div className="text1">Hubungi Kami
                                 <div className="text2">0804-1500-308</div>
                             </div>
                         </div>
                         <br/>
-                        <img src={pict3}/> &nbsp;
-                        <img src={pict4}/> &nbsp;
-                        <img src={pict5}/>
+                        <img src={pict3} alt="logo-1"/> &nbsp;
+                        <img src={pict4} alt="logo-2"/> &nbsp;
+                        <img src={pict5} alt="logo-3"/>
                     </Col>
                     <Col>
                         <div className="About">Tentang Traveloka</div>
@@ -77,7 +77,7 @@ class Footer extends Component {
                         <div className="follow" >Follow kami di 
                             {this.state.sosmeds.map((sosmed) =>
                                 <div className="icon2" key={sosmed.id}>
-                                    <img src={sosmed.icon}/>
+                                    <img src={sosmed.icon} alt="sosial-media"/>
                                     <div className="text2">
                                         <a href =""> <div className="svg" dangerouslySetInnerHTML={{__html:sosmed.path_url}}></div> {sosmed.name}</a>
                                         
@@ -89,10 +89,10 @@ class Footer extends Component {
                     <Col>
                         <div className="download">Download Traveloka App
                             <div className="logo1">
-                                <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android}/></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android} alt="logo-playstore"/></a>
                             </div>
                             <div className="logo2">
-                                <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple}/></a>
+                                <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple} alt="logo-appstore"/></a>
                             </div>
                         </div>
                     </Col>
