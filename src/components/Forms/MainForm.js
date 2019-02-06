@@ -21,7 +21,7 @@ export default class Forms extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: '2'
     };
   }
 
@@ -98,7 +98,7 @@ export default class Forms extends Component {
                 </ListGroup>
             </Col>
 
-            <Col sm={6} md={9}>
+            <Col sm={6} md={9} className="padding-0">
               <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="2">
                     <HotelForm/>

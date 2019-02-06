@@ -3,7 +3,6 @@
     box-shadow: 1px 1px 6px #cccccc;
     margin-bottom: 50px;
     width: 960.61px !important;
-    height: 242px;
     border-radius: 5px;
 }
 
@@ -24,6 +23,10 @@ a.list-group-item {
     font-size: 14px;
 }
 
+.list-group-item.active {
+    color: #FFF !important;
+}
+
 .btn-warning {
     background-color: #f96d01 !important;
     color: white !important;
@@ -42,19 +45,20 @@ img > .loc {
     border: 1;
 }
 
+.padding-0 {
+    padding: 0 !important;
+}
+
 .fill {
     background-color: white;
-    position: absolute;
     margin-top: 6px;
     border-radius: 5px;
 }
 
 .fill-row {
-    position: relative;
-    padding: 7px !important;
+    padding: 10px 7px 15px 7px !important;
     font-size: 14px;
     letter-spacing: .6px;
-    margin-bottom: 9px;
 }
 
 .first-row {
@@ -90,8 +94,4 @@ img > .loc {
 
 .third-row.mt-2{
     margin-top: 0px !important;
-}
-
-.show-grid.mt-5.row {
-    height: 242px;
 }
