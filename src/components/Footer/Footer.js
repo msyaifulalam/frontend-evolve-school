@@ -97,8 +97,10 @@ class Footer extends Component {
                         </div>
                     </Col>
                 </Row>
-                <div className="copyright">Copyright © 2019 Traveloka</div>
             </Container>
+            <div className="jarak">
+                <div className="copyright">Copyright © 2019 Traveloka</div>
+            </div>
         </div>
       );
     }
