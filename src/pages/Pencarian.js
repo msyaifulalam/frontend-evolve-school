@@ -69,41 +69,41 @@ export class Pencarian extends Component {
                             <FormGroup check className='search'>
                               <Label check>
                                 <Input type="checkbox" name="rate1" className='rate'/>{' '}
-                                <img src={rate} />
+                                <img src={rate} alt="rate"/>
                               </Label>
                             </FormGroup>
                             <FormGroup check className='search'>
                               <Label check>
                                 <Input type="checkbox" name="rate2" className='rate'/>{' '}
-                                <img src={rate} />
-                                <img src={rate} />
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
                               </Label>
                             </FormGroup>
                             <FormGroup check className='search'>
                               <Label check>
                                 <Input type="checkbox" name="rate3" className='rate'/>{' '}
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
                               </Label>
                             </FormGroup>
                             <FormGroup check className='search'>
                               <Label check>
                                 <Input type="checkbox" name="rate4" className='rate'/>{' '}
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
                               </Label>
                             </FormGroup>
                             <FormGroup check className='search'>
                               <Label check>
                                 <Input type="checkbox" name="rate5" className='rate'/>{' '}
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
-                                <img src={rate} />
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
+                                <img src={rate} alt="rate"/>
                               </Label>
                             </FormGroup>
                           </FormGroup>
@@ -119,10 +119,10 @@ export class Pencarian extends Component {
                           
                             <CardTitle>The Edelweiss Hotel Yogyakarta</CardTitle>
                             <Button outline color="info">Hotel</Button>{' '}
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} /><br/>
-                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/><br/>
+                            <CardText><img src={lokasi} alt="lokasi"/>&nbsp; Depok, Yogyakarta</CardText>
                             
                         </Col>
                         <Col xs="3">
@@ -137,12 +137,12 @@ export class Pencarian extends Component {
                           
                             <CardTitle>Hotel New Saphir</CardTitle>
                             <Button outline color="info">Hotel</Button>{' '}
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} /><br/>
-                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/><br/>
+                            <CardText><img src={lokasi} alt="lokasi"/>&nbsp; Depok, Yogyakarta</CardText>
                             
                         </Col>
                         <Col xs="3" border-left="1px">
@@ -157,11 +157,11 @@ export class Pencarian extends Component {
                           
                             <CardTitle>Horison Grand Keisha Yogyakarta</CardTitle>
                             <Button outline color="info">Hotel</Button>{' '}
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} />
-                            <img src={rate} /><br/>
-                            <CardText><img src={lokasi} />&nbsp; Depok, Yogyakarta</CardText>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/>
+                            <img src={rate} alt="rate"/><br/>
+                            <CardText><img src={lokasi} alt="lokasi"/>&nbsp; Depok, Yogyakarta</CardText>
                             
                         </Col>
                         <Col xs="3">
