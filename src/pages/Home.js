@@ -3,7 +3,7 @@ import '../App.css';
 import Footer from '../components/Footer/Footer';
 import Navigasi from '../components/Navigasi/Navigasi';
 import MainForm from '../components/Forms/MainForm';
-// import Tanggalbeli from '../components/DaftarPembelian/Tanggalbeli';
+import PesanHotel from '../components/PemesananHotel/PesanHotel'
 
 class Home extends Component {
     render() {
@@ -12,6 +12,7 @@ class Home extends Component {
                 <Navigasi/>
                 <MainForm/>
                 <Footer/>
+                {/* <PesanHotel/> */}
             </div>
         );
     }

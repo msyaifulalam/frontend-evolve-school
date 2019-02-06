@@ -1,0 +1,263 @@
+/* container */
+.pesanhotel .container {
+    padding-top: 15px;
+    color:  rgb(75, 75, 75);
+}
+
+/* jarak judul dengan kolom */
+.jarak_dg_kolom {
+    padding-top: 15px;
+}
+
+/* kolom 1 */
+.col1 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35%;
+    color:  rgb(75, 75, 75);
+    border-left: 2px solid #008cff;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-right: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.jarak_dg_list {
+    padding-top: 5px;
+}
+.jarak_dg_list li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+/* list 1 */
+.col1 .namahotel {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* list 2 */
+.col1 .kategori {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+}
+.kategori .harga1 {
+    margin-left: 320px;
+}
+
+/* list 3 */
+.col1 .biayapajak {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+}
+.biayapajak .harga2 {
+    margin-left: 381px;
+}
+
+/* list 3 */
+.col1 .travelokafee {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    color: rgb(40, 187, 40);
+}
+.travelokafee .gratis{
+    margin-left: 481px;
+}
+
+/* total harga */
+.totalharga {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    border: 1px solid rgb(228, 228, 228);
+}
+.totalharga .total {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    display: flex;
+}
+.totalharga .total .jumlah {
+    margin-left: 490px;
+}
+
+/* jarak kolom dg ketentuan pemesanan */
+.jarak_dg_ketentuan {
+    padding-top: 25px;
+}
+.group_pemesanan {
+    display: flex;
+}
+.ketentuan2 {
+    display: flex;
+}
+.ketentuan2 a {
+    font-size: 16px;
+    color: blue !important;
+    margin-right: 5px;
+}
+.ketentuan2 .jarak {
+    margin-left: 5px;
+}
+.pemesanan .btn {
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+.pemesanan .btn-warning {
+    background-color: rgb(241, 114, 50) !important;
+    border-color: rgb(241, 114, 50);
+    width: 235px;
+    height: 40px;
+}
+
+
+/* kolom 2 */
+.col2 {
+    background-color: rgb(255, 255, 255);  
+    color:  rgb(56, 56, 56);
+}
+
+/* group baris 1 */
+.col2 .line1 {  
+    border: 1px solid rgb(228, 228, 228);  
+}
+.col2 .line1 .teks {
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/* group baris 2 */
+.col2 .border {
+    border: 1px solid rgb(228, 228, 228);
+}
+.col2 .border .line2 {
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex;
+}
+.border .line2 .pict_hotel {
+    width: 95px;
+    height: 95px;   
+    background-image: url("../../asset/Hotel_Airport_Jakarta.png");
+    background-size: cover;
+    border: 0px solid rgb(228, 228, 228);
+    border-radius: 3px;
+}
+.border .line2 .width {
+    margin-left: 20px;
+    width: 200px;
+}
+.border .line2 .width .nama {   
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* svg wifi gratis */
+.wifi {
+    margin-left: 25px;
+    margin-top: 9px;
+    display: flex;
+}
+.wifi img {
+    height: 17px;
+    margin-top: 3px; 
+}
+.wifi .wifi_gratis {
+    margin-left: 7px;
+    font-size: 14px;
+    color: rgb(37, 187, 75);
+}
+
+/* garis putus-putus */
+.border .garis1 {
+    margin-left: 38px;
+    margin-right: 38px;
+    color: rgb(170, 170, 170);
+}
+
+/* group baris 3 */
+.line3 ul {
+    padding-inline-start: 30px;
+    list-style-type: none;
+    font-size: 13px;
+    color:  rgb(75, 75, 75);
+    font-weight: 500;
+}
+.line3 .durasi {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.durasi .value1 {
+    margin-left: 110px;
+}
+.line3 .in {
+    display: flex;
+    margin-bottom: 10px;
+}
+.in .value2 {
+    margin-left: 97px;
+}
+.line3 .out {
+    display: flex;
+    margin-bottom: 25px;
+}
+.out .value3 {
+    margin-left: 88px;
+}
+.line3 .garis2 {
+    margin-left: 38px;
+    margin-right: 38px;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+/* group baris 4 */
+.line4 ul {
+    padding-inline-start: 30px;
+    list-style-type: none;
+    font-size: 13px;
+    color:  rgb(75, 75, 75);
+    font-weight: 500;
+    /* margin-block-end: 2em; */
+
+}
+.line4 .tipe1 {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.tipe1 .tipe_kamar {
+    margin-left: 80px;
+}
+.line4 .tipe2 {
+    display: flex;
+    margin-bottom: 25px;
+}
+.tipe2 .tipe_tempat_tidur {
+    margin-left: 40px;
+}
+.line4 .kamar {
+    display: flex;
+    margin-bottom: 10px;
+}
+.kamar .jumlah_kamar {
+    margin-left: 65px;
+}
+.line4 .tamu {
+    display: flex;
+    margin-bottom: 10px;
+}
+.tamu .jumlah_tamu {
+    margin-left: 52px;
+}
+
+.end {
+    padding-top: 50px;
+}

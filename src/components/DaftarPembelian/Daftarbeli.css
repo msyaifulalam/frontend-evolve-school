@@ -22,12 +22,15 @@
     margin-bottom: 0px;
     display: grid;
 }
-.bg .form-control {
+.bg .textdari .tgl .form-control {
+    width: 100% !important;
+    height: 40% !important;
     border: none;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 8px;
-    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    padding: 0px;
     color: rgb(163, 163, 163);
     font-weight: 450;
     font-size: 15px;
@@ -55,7 +58,21 @@
     font-weight: 500;
     color: rgb(163, 163, 163);
 }
+.bg .textsampai .tgl .form-control {
+    width: 100% !important;
+    height: 40% !important;
+    border: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    padding: 0px;
+    color: rgb(163, 163, 163);
+    font-weight: 450;
+    font-size: 15px;
+}
 
+/* januari 2019 */
 .bg .marginleft .bulan {
     padding-top: 30px;
     padding-bottom: 10px;
