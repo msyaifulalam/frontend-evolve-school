@@ -29,7 +29,7 @@ export class Navigasi extends Component {
   }
   
   componentDidMount(){
-    axios.get('http://demo2118348.mockable.io/features')
+    axios.get('https://backend-evolve.herokuapp.com/features')
     .then(response => {
         console.log(response);
         this.setState({
