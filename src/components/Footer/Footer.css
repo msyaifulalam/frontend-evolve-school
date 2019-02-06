@@ -117,8 +117,12 @@
   }
   
   /* end */
-  .footer .copyright {
-    padding : 24px 24px 5px;
+  .footer .jarak {
+    padding-top: 80px;
+  }
+  .footer .jarak .copyright {
+    padding-top: 30px;
+    padding-bottom: 50px;
     line-height: 24px;
     border-top: 1px solid;
     border-top-color: #818181;
