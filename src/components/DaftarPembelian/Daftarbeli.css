@@ -1,12 +1,7 @@
 .bg {
-    /* background-color: #e7e8e9; */
     background-color: transparent;
 }
-.bg .card-body {
-    background-color: transparent;
-    border: none;
-}
-img {
+.logotgl img {
     padding-bottom: 5px;
 }
 .bg .col-md-6 {
@@ -15,6 +10,7 @@ img {
 .bg .col-md-15 {
     max-width: 92%;
 }
+
 /* sejajarkiri */
 .bg .marginleft {
     margin-left: 2px;
@@ -26,11 +22,15 @@ img {
     margin-bottom: 0px;
     display: grid;
 }
-.bg .form-control {
+.bg .textdari .tgl .form-control {
+    width: 100% !important;
+    height: 40% !important;
     border: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    padding: 0px;
     color: rgb(163, 163, 163);
     font-weight: 450;
     font-size: 15px;
@@ -38,31 +38,41 @@ img {
 .bg .marginleft .putih .ratakiri {
     margin-left: 15px;
 }
-.form-group label {
-    margin-bottom: 0px;
-}
 .bg .marginleft .putih {
     background: rgb(255, 255, 255);
     margin-top: 20px;
     border: 2px solid rgb(231, 231, 231);
     border-radius: 5px;
 }
-.bg .marginleft .putih .textdari {
-    margin-left: 50px;
-    font-size: 11px;
+.bg .textdari {
+    margin-left: 15px;
+    font-size: 12px;
     font-weight: 500;
     color: rgb(163, 163, 163);
 }
-
 
 /* tanggal sampai */
-.bg .marginleft .putih .textsampai {
-    margin-left: 50px;
-    font-size: 11px;
+.bg .textsampai {
+    margin-left: 15px;
+    font-size: 12px;
     font-weight: 500;
     color: rgb(163, 163, 163);
 }
+.bg .textsampai .tgl .form-control {
+    width: 100% !important;
+    height: 40% !important;
+    border: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    padding: 0px;
+    color: rgb(163, 163, 163);
+    font-weight: 450;
+    font-size: 15px;
+}
 
+/* januari 2019 */
 .bg .marginleft .bulan {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -89,6 +99,7 @@ img {
 /* group list-item*/
 .bg .list-group-item {
     display: flex;
+    padding-right: 0px;
 }
 .bg .list-group-item-light {
     background-color: #ffffff;
@@ -115,12 +126,12 @@ img {
     font-weight: bold;
 }
 .bg .list-group-item .harga1 {
-    margin-left: 392px;
+    margin-left: 422px;
     font-weight: bold;
 }
 .bg .list-group-item .groupstatus .berhasil .detail1 {
     color: rgb(68, 139, 231);
-    margin-left: 370px;
+    margin-left: 405px;
     font-weight: bold;
 }
 
@@ -135,12 +146,12 @@ img {
     font-weight: bold;
 }
 .bg .list-group-item .harga2 {
-    margin-left: 392px;
+    margin-left: 422px;
     font-weight: bold;
 }
 .bg .list-group-item .groupstatus .berhasil .detail2 {
     color: rgb(68, 139, 231);
-    margin-left: 370px;
+    margin-left: 405px;
     font-weight: bold;
 }
 
@@ -150,12 +161,12 @@ img {
     font-weight: bold;
 }
 .bg .list-group-item .harga3 {
-    margin-left: 392px;
+    margin-left: 422px;
     font-weight: bold;
 }
 .bg .list-group-item .groupstatus .berhasil .detail3 {
     color: rgb(68, 139, 231);
-    margin-left: 370px;
+    margin-left: 405px;
     font-weight: bold;
 }
 

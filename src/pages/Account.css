@@ -24,10 +24,10 @@ body{
 }
 
 .form-control{
-    margin:10px 10px;
+    /* margin:10px 10px; */
     display: inline-block !important;
     width: 40% !important;
-    border-radius: 1rem !important;
+    /* border-radius: 1rem !important; */
 }
 input#min.form-control.price{
     position: absolute;

@@ -21,7 +21,7 @@ export default class Forms extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: '2'
     };
   }
 
@@ -43,62 +43,62 @@ export default class Forms extends Component {
                     className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.toggle('1'); }} 
                       tag="a" href="#" action>
-                    <img src={Flight}/>
+                    <img alt="flight-img" src={Flight}/>
                     <span className="ml-2">Flights</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '2' })}
                     onClick={() => { this.toggle('2'); }} 
                       tag="a" href="#" action>
-                    <img src={Hotel}/>
+                    <img alt="hotel-img" src={Hotel}/>
                     <span className="ml-2">Hotels</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '3' })}
                     onClick={() => { this.toggle('3'); }} 
                       tag="a" href="#" action>
-                    <img src={Train}/>
+                    <img alt="train-img" src={Train}/>
                     <span className="ml-2">Trains</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '4' })}
                     onClick={() => { this.toggle('4'); }} 
                       tag="a" href="#" action>
-                    <img src={BusShutle}/>
+                    <img alt="busshutle-img" src={BusShutle}/>
                     <span className="ml-2">Bus & Shutle</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '5' })}
                     onClick={() => { this.toggle('5'); }} 
                       tag="a" href="#" action>
-                    <img src={Airport}/>
+                    <img alt="airport-img" src={Airport}/>
                     <span className="ml-2">Airport Transport</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '6' })}
                     onClick={() => { this.toggle('6'); }} 
                       tag="a" href="#" action>
-                    <img src={FlightHotel}/>
+                    <img alt="flighthotel-img" src={FlightHotel}/>
                     <span className="ml-2">Flight + Hotel</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '7' })}
                     onClick={() => { this.toggle('7'); }} 
                       tag="a" href="#" action> 
-                    <img src={Attractions}/>
+                    <img alt="attractions-img" src={Attractions}/>
                     <span className="ml-2">Attractions & Activities</span>
                   </ListGroupItem>
                   <ListGroupItem 
                     className={classnames({ active: this.state.activeTab === '8' })}
                     onClick={() => { this.toggle('8'); }} 
                       tag="a" href="#" action>
-                    <img src={Topup}/>
+                    <img alt="topup-img" src={Topup}/>
                     <span className="ml-2">Top-Up & Data Packages</span>
                   </ListGroupItem>
                 </ListGroup>
             </Col>
 
-            <Col sm={6} md={9}>
+            <Col sm={6} md={9} className="padding-0">
               <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="2">
                     <HotelForm/>

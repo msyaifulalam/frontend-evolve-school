@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { fetchProfDetails } from '../api/profile';
 
 export const FETCH_PROFILE = 'FETCH_PROFILE';

@@ -3,7 +3,6 @@ import '../../App.css';
 import '../DaftarPembelian/Daftarbeli.css';
 import {
     FormGroup,
-    Label,
     Input,
     Form,
     Row,
@@ -28,18 +27,24 @@ class Tanggalbeli extends Component {
                             <Col md={6}>
                                 <div className="putih">
                                     <FormGroup>
-                                        <Label for="exampleDate">
-                                            <div className="textdari">Dari</div>
-                                        </Label>
                                         <div className="ratakiri">
                                             <InputGroup>
-                                                <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
-                                                <Input 
-                                                    type="date"
-                                                    name="date"
-                                                    id="exampleDate"
-                                                    placeholder="Tue, Dec 18, 2018"
-                                                    />
+                                                <div className="grouptgl">
+                                                    <div className="logotgl">
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal} alt="tanggal"/>
+                                                            <div className="textdari">Dari
+                                                                <div className="tgl">
+                                                                <Input 
+                                                                    type="date"
+                                                                    name="date"
+                                                                    id="exampleDate"
+                                                                    placeholder="Tue, Dec 18, 2018"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </InputGroupAddon>
+                                                    </div>
+                                                </div>
                                             </InputGroup>
                                         </div>
                                     </FormGroup>
@@ -48,17 +53,24 @@ class Tanggalbeli extends Component {
                             <Col md={6}>
                                 <div className="putih">
                                     <FormGroup>
-                                        <Label for="exampleDate">
-                                            <div className="textsampai">Sampai</div>
-                                        </Label>
                                         <div className="ratakiri">
                                             <InputGroup>
-                                                <InputGroupAddon addonType="prepend"><img src={Tanggal}/></InputGroupAddon>
-                                                <Input
-                                                    type="date"
-                                                    name="date"
-                                                    id="exampleDate"
-                                                    placeholder="Wed, Jan 16, 2019"/>
+                                                <div className="grouptgl">
+                                                    <div className="logotgl">
+                                                        <InputGroupAddon addonType="prepend"><img src={Tanggal} alt="tanggal"/>
+                                                            <div className="textsampai">Sampai
+                                                                <div className="tgl">
+                                                                <Input
+                                                                    type="date"
+                                                                    name="date"
+                                                                    id="exampleDate"
+                                                                    placeholder="Wed, Jan 16, 2019"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </InputGroupAddon>
+                                                    </div>
+                                                </div>
                                             </InputGroup>
                                         </div>
                                     </FormGroup>
@@ -73,7 +85,7 @@ class Tanggalbeli extends Component {
                                 <div className="pesanan1">411059742</div>
                                 <div className="harga1">Rp 125.742</div>
                             </ListGroupItem>
-                            <ListGroupItem color="dark"><img src={Bandara}/>
+                            <ListGroupItem color="dark"><img src={Bandara} alt="icon-bandara"/>
                                 <div className="jarak">Ke Soekarno Hatta International Airport (CGK)</div>
                             </ListGroupItem>
                             <ListGroupItem color="light">
@@ -95,7 +107,7 @@ class Tanggalbeli extends Component {
                                     <div className="pesanan2">411018548</div>
                                     <div className="harga2">Rp 131.548</div> 
                                 </ListGroupItem>
-                                <ListGroupItem color="dark"><img src={Hotel}/>
+                                <ListGroupItem color="dark"><img src={Hotel} alt="icon-hotel"/>
                                     <div className="jarak">Airy Eco Syariah Bandara Soetta Perumahan Bandara Mas satu Tangerang</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light"> 
@@ -118,7 +130,7 @@ class Tanggalbeli extends Component {
                                     <div className="pesanan3">411012196</div>
                                     <div className="harga3">Rp 165.196</div>
                                 </ListGroupItem>
-                                <ListGroupItem color="dark"><img src={Tagihan}/>
+                                <ListGroupItem color="dark"><img src={Tagihan} alt="icon-tagihan"/>
                                     <div className="jarak">XL Axiata - XL Prioritas</div>
                                 </ListGroupItem>
                                 <ListGroupItem color="light">

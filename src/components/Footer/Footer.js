@@ -13,10 +13,6 @@ import pict4 from '../../asset/logo2.svg';
 import pict5 from '../../asset/logo3.svg'; 
 import android from '../../asset/googleplay.svg';
 import apple from '../../asset/appstore.svg';
-import twitter from '../../asset/twitter.svg';
-import facebook from '../../asset/facebook.svg';
-import instagram from '../../asset/instagram.svg';
-import googleplus from '../../asset/google+.svg';
 
 class Footer extends Component {
     constructor(props) {
@@ -28,11 +24,11 @@ class Footer extends Component {
     }
         
     componentDidMount(){
-        axios.all([
+        axios.all([ //penggunaan 2 axios
             axios.get('https://backend-evolve.herokuapp.com/footers/about'),
             axios.get('https://backend-evolve.herokuapp.com/footers/sosmed')
         ])
-        .then(axios.spread ((footersRes,sosmedsRes) => {
+        .then(axios.spread ((footersRes,sosmedsRes) => { //untuk menampilkan 2 API sekaligus
             console.log(footersRes);
             console.log(sosmedsRes);
             this.setState({
@@ -50,18 +46,18 @@ class Footer extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <img src={pict1}/>
+                        <img src={pict1} alt="logo-traveloka"/>
                         <br/>
                         <div className="img">
-                            <img src={pict2}/>
+                            <img src={pict2} alt="logo-24"/>
                             <div className="text1">Hubungi Kami
                                 <div className="text2">0804-1500-308</div>
                             </div>
                         </div>
                         <br/>
-                        <img src={pict3}/> &nbsp;
-                        <img src={pict4}/> &nbsp;
-                        <img src={pict5}/>
+                        <img src={pict3} alt="logo-1"/> &nbsp;
+                        <img src={pict4} alt="logo-2"/> &nbsp;
+                        <img src={pict5} alt="logo-3"/>
                     </Col>
                     <Col>
                         <div className="About">Tentang Traveloka</div>
@@ -77,9 +73,11 @@ class Footer extends Component {
                         <div className="follow" >Follow kami di 
                             {this.state.sosmeds.map((sosmed) =>
                                 <div className="icon2" key={sosmed.id}>
-                                    <img src={sosmed.icon}/>
+                                    <div className="svg" dangerouslySetInnerHTML={{__html:sosmed.icon}}></div>
+                                    {/* <img src={sosmed.icon} alt="sosial-media"/> */}
                                     <div className="text2">
-                                        <a href={sosmed.path_url}>{sosmed.name}</a>
+                                        <a href ={sosmed.path_url}>{sosmed.name}</a>
+                                        
                                     </div>
                                 </div>    
                             )}
@@ -88,16 +86,18 @@ class Footer extends Component {
                     <Col>
                         <div className="download">Download Traveloka App
                             <div className="logo1">
-                                <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android}/></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.traveloka.android&hl=en"><img src={android} alt="logo-playstore"/></a>
                             </div>
                             <div className="logo2">
-                                <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple}/></a>
+                                <a href="https://itunes.apple.com/us/app/traveloka-book-flight-hotel/id898244857?mt=8"><img src={apple} alt="logo-appstore"/></a>
                             </div>
                         </div>
                     </Col>
                 </Row>
-                <div className="copyright">Copyright © 2019 Traveloka</div>
             </Container>
+            <div className="jarak">
+                <div className="copyright">Copyright © 2019 Traveloka</div>
+            </div>
         </div>
       );
     }
