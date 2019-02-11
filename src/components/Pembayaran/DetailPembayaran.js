@@ -28,22 +28,24 @@ class DetailPembayaran extends Component {
                                 <span>Mohon pilih Online Transfer sebagai tipe transfer Anda</span>
                             </div>
                             <div className='textBox'>
-                                <h4>Bank Mandiri</h4>
+                                <h4 className='nama_bank'>Bank Mandiri</h4>
                                 <div className='trf_detail'>
                                     <div className='ket'>Nomor Rekening:</div>
-                                    <div className='detail'>165 00 66 77 0000</div>
+                                    <div className='value'>165 00 66 77 0000</div>
                                 </div>
                                 <div className='trf_detail'>
                                     <div className='ket'>Nama Penerima:</div>
-                                    <div className='detail'>PT. Trinusa Travelindo <br/> Grand Slipi Tower</div>
+                                    <div className='value'>PT. Trinusa Travelindo <br/> Grand Slipi Tower</div>
                                 </div>
                             </div>
                             <div className='textBox'>
                                 <div className='pay_detail'>
                                     <div className='ket'>Jumlah Transfer:</div>
-                                    <div className='detail'>Rp. 1.049.702</div>
+                                    <div className='value'>Rp. 1.049.</div>
+                                    <div className='unique_code'>702</div>
                                 </div>
                             </div>
+                            <div className='important'>PENTING! Mohon transfer sampai 3 digit terakhir</div>
                             <div className='step_title'>
                                 <div className='step_text'>Anda Sudah Menbayar?</div>
                             </div>
