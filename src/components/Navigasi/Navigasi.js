@@ -46,7 +46,11 @@ export class Navigasi extends Component {
         
           <Navbar id="navigasi" expand="md">
             <Container>
-              <NavbarBrand href="/"><img src={burger} alt="burger"/> &nbsp; <img src={logo} alt="logo-traveloka"/></NavbarBrand>
+              <img src={burger} alt="burger"/> &nbsp; 
+              <Link to='/'>
+                <img src={logo} alt="logo-traveloka"/>
+              </Link>
+              
               <NavbarToggler  />
               <Collapse  navbar>
                 <Nav className="ml-auto" navbar>
@@ -60,7 +64,7 @@ export class Navigasi extends Component {
               </Collapse>
             </Container>
           </Navbar>
-          <Navbar color="light">
+          <Navbar id="sub-navbar">
             <Container>
               <Nav>
               { this.state.features.map((feature) =>

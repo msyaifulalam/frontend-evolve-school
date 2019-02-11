@@ -1,0 +1,155 @@
+body{
+    background-color:#eee;
+}
+
+.col{
+    margin-top: 10px;
+}
+
+.row.title-search
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+
+p.date-title-search
+{
+    margin: 0;
+}
+button.btn-search.btn{
+    float: right;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.card-searchBy.card{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;  
+    width: 100%; 
+}
+
+.card-searchBy > .card-title{
+    font-weight: 500; 
+}
+
+div.form-check-searchBy.form-check{
+    position: relative;
+    /* display: table-cell; */
+    margin-bottom: 10px; 
+}
+.card-searchBy > .form-check-label.form-check-searchBy{
+    width: 50%;
+    margin-left: 0;
+}
+.card-searchBy > input[type=radio].form-check-input.form-check-searchBy{
+    margin-left: 10px ;
+    width: 150px;
+}
+
+input[type=checkbox].rate{
+    height: 23px;
+    width: 15px;
+}
+
+.card-searchByPrice.card{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;  
+    width: 100%; 
+}
+/*  */ 
+.searchByPrice.form-group{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+input.form-control.input-price{
+    position : relative;
+    border-radius: 20px;
+    width: 40%;
+    z-index: 2;
+    /* top:158px;
+    left:0px; */
+    /* height: 30px; */
+}
+
+hr.hr-price {
+    position: relative;
+    top: -35px;
+    z-index: 1;
+}
+
+/* input#max.form-control.input-price{
+    position : relative;
+    border-radius: 20px;
+    /* top:158px;
+    left:189px;
+    height: 30px; */
+
+
+.form-check.search{
+    margin-bottom: 10px;
+}
+
+
+.search.card-title .btn{
+    padding-bottom: 4px;
+    padding-top: 0;
+    width: 167px;
+
+}
+
+p.card-text{
+    width: 300px
+}
+
+.search-list.card{
+    flex-direction: row;
+    padding: 0px;
+    box-shadow: 0 0 0 0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40vh;
+}
+
+img.card-image-search-list{
+    height: -webkit-fill-available;
+
+}
+
+div.col-3{
+    padding: 0;
+    border-left: 1px solid #ddd;
+}
+
+div.col-6{
+    padding: 10px
+}
+div.col-6 button.btn{
+    float: left;
+    border-radius: 50px;
+    width: 85px;
+    height: 25px;
+    padding: 0rem .75rem;
+    font-size: 0.8rem;
+}
+div.col-6 p.card-text{
+    float: left;
+    font-size: 1rem;
+    margin-top:5px;
+    color: gray
+}
+
+div.col-3 h4{
+    color: #f96d01;
+    padding-top:50%;
+    margin-left: 15px
+}
