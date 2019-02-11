@@ -8,6 +8,7 @@
     background-color: white;
     padding: 50px;
     margin-bottom: 25px;
+    border: solid 1px lightgray;
 }
 
 .notif{
@@ -91,4 +92,13 @@
     font-weight: bold;
     color: black;
     padding: 0 20px;
+}
+
+.unique_code{
+    color: darkorange;
+}
+
+.important{
+    background-color: rgb(255, 194, 80);
+    padding: 10px;
 }

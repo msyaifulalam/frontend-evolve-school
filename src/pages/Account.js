@@ -18,20 +18,34 @@ import {
 class Account extends Component {
     constructor(props) {
         super(props);
-    
-        this.toggle = this.toggle.bind(this);
+        this.goTo = this.goTo.bind(this);
         this.state = {
           activeTab: '1',
           isActive: false
         };
       }
-    
-      toggle(tab) {
-        if (this.state.activeTab !== tab) {
-          this.setState({
-            activeTab: tab,
-          });
+
+      componentDidMount(){
+        this.handleTab('profile')
+      }
+
+      handleTab(param){
+        switch (param) {
+          case 'profile':
+              this.setState({ activeTab: '1'})
+              break;
+          case 'purchase':
+              this.setState({ activeTab: '5'})
+              break;
+          default:
+              this.setState({ activeTab: '1'})
+              break;
         }
+      }
+    
+      goTo(path) {
+          this.props.router.history.push(`/main-menu/${path}`);
+          this.handleTab(path)
       }
 
     render() {
@@ -44,15 +58,15 @@ class Account extends Component {
                         <Row>
                             <Col xs="4">
                             <ListGroup>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '1' })} onClick={() => { this.toggle('1'); }}>Ubah Profile</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '2' })} onClick={() => { this.toggle('2'); }}>Poin Saya</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '3' })} onClick={() => { this.toggle('3'); }}>Tagihan Saya</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '4' })} onClick={() => { this.toggle('4'); }}>Kartu Saya</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '5' })} onClick={() => { this.toggle('5'); }}>Daftar Pembelian</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '6' })} onClick={() => { this.toggle('6'); }}>Pesanan Saya</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '7' })} onClick={() => { this.toggle('7'); }}>Passenger Quick Pick</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '8' })} onClick={() => { this.toggle('8'); }}>Info Promo</ListGroupItem>
-                                <ListGroupItem className={classnames({ active: this.state.activeTab === '9' })} onClick={() => { this.toggle('9'); }}>Best Price Guarantee</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '1' })} onClick={() => { this.goTo('profile'); }}>Ubah Profile</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '2' })} onClick={() => { this.goTo('point'); }}>Poin Saya</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '3' })} onClick={() => { this.goTo('biling'); }}>Tagihan Saya</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '4' })} onClick={() => { this.goTo('mycard'); }}>Kartu Saya</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '5' })} onClick={() => { this.goTo('purchase'); }}>Daftar Pembelian</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '6' })} onClick={() => { this.goTo('order'); }}>Pesanan Saya</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '7' })} onClick={() => { this.goTo('passenger'); }}>Passenger Quick Pick</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '8' })} onClick={() => { this.goTo('promo'); }}>Info Promo</ListGroupItem>
+                                <ListGroupItem className={classnames({ active: this.state.activeTab === '9' })} onClick={() => { this.goTo('bestprice'); }}>Best Price Guarantee</ListGroupItem>
                                 <ListGroupItem tag="a" href="/" action>Log Out</ListGroupItem>
                             </ListGroup>
                             </Col>
@@ -89,7 +103,7 @@ class Account extends Component {
                                         </Row>
                                     </TabPane>
                                     <TabPane tabId="5">
-                                        <Row>
+                                        <Row className="top">
                                         <Card className="nobackground" body>
                                             <Tanggalbeli/>
                                         </Card>
