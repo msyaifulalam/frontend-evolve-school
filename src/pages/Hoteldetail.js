@@ -133,7 +133,7 @@ export default class Hoteldetail extends Component {
                                 <div className="accrording" style={{color:'#434343', fontSize:'14px'}}>
                                     <p>According to 1,200 guests</p>
                                 </div>
-                                <div className="card" >
+                                <div className="cards" >
                                     <Card style={{backgroundColor:'#f6f6f6', padding:'16px'}}>
                                         <CardText className="card-hotelDetail" style={{fontSize:'12px'}}>
                                             <p>10 guests talked about Friendly Staffs</p>
