@@ -60,7 +60,7 @@ export class Navigasi extends Component {
               </Collapse>
             </Container>
           </Navbar>
-          <Navbar color="light">
+          <Navbar id="sub-navbar">
             <Container>
               <Nav>
               { this.state.features.map((feature) =>

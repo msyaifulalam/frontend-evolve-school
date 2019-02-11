@@ -38,18 +38,17 @@ button.btn-search.btn{
     font-weight: 500; 
 }
 
-.card-searchBy > div#form-check-searchBy.form-check{
+div.form-check-searchBy.form-check{
     position: relative;
-    display: block;
-    padding-left: 1.25rem;
+    /* display: table-cell; */
     margin-bottom: 10px; 
 }
 .card-searchBy > .form-check-label.form-check-searchBy{
     width: 50%;
     margin-left: 0;
 }
-.card-searchBy > input[type=radio].form-check-input .form-check-searchBy{
-    margin-left: 0 ;
+.card-searchBy > input[type=radio].form-check-input.form-check-searchBy{
+    margin-left: 10px ;
     width: 150px;
 }
 

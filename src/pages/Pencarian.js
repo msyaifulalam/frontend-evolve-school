@@ -34,18 +34,18 @@ export class Pencarian extends Component {
                       <CardText>Urutkan hasil pencarian Anda berdasarkan:</CardText>
                       <hr/>
                       <FormGroup tag="fieldset">
-                        <FormGroup check id="form-check-searchBy">
-                          <Label check className="form-check-searchBy">
+                        <FormGroup check className="form-check-searchBy">
+                          <Label check>
                             <Input type="radio" name="radio1" />{' '}
                             Harga tertinggi
                           </Label>
-                          <Label check className="form-check-searchBy">
+                          <Label check>
                             <Input type="radio" name="radio2" />{' '}
                             Harga terendah
                           </Label> 
                         </FormGroup>
                         <FormGroup check >
-                          <Label check >
+                          <Label check>
                             <Input type="radio" name="radio3"/>{' '}
                             Nilai Ulasan
                           </Label>
