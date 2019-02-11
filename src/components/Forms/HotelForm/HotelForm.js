@@ -6,6 +6,8 @@ import Location from '../../../asset/Forms-svg/Location.svg';
 import Payment from '../../../asset/Forms-svg/Payment.svg';
 import BestPrice from '../../../asset/Forms-svg/BestPrice.svg';
 import Search from '../../../asset/Forms-svg/Search.svg';
+import moment from 'moment';
+
 
 
 export default class Fill extends Component {
@@ -15,18 +17,45 @@ export default class Fill extends Component {
           destination: '',
           room: '',
           checkin: '',
-          duration: '',
+          duration: 1,
           checkout: '',
           checkbox: '',
           search: ''
         }
     }
 
+ 
+
     changeHandler(e, name){
       this.setState({
         [name]: e.target.value
+      }, function(){
+        if (name === 'checkin' || name === 'duration') {
+       
+          const checkin = moment(this.state.checkin, 'YYYY-MM-DD').zone('+07:00');
+          const duration = this.state.duration;
+          const checkout = checkin.add(duration, 'days');
+
+          this.setState({
+            checkout : checkout.format('DD-MM-YYYY')
+          })
+        }
       })
     }
+
+    // componentDidMount(){
+    //   axios.get('http://localhost:1337/booking/hotel/search/?address&check_in&check_out&status')
+    //   .then(response => {
+    //       console.log(response);
+    //       this.setState({
+    //           address: response.data.address,
+    //           check_in: response.data.check_in,
+    //           check_out: response.data.check_in,
+    //       })
+    //   }).catch(err => {
+    //       console.log(err);
+    //   });
+    // }
 
     render () {
         return (
@@ -86,21 +115,12 @@ export default class Fill extends Component {
                               <InputGroup>
                                   <InputGroupAddon addonType="prepend">@</InputGroupAddon> 
                                   <Input onChange={(e) => this.changeHandler(e, 'duration')} type="select" name="select" id="duration" placeholder="time">
-                                    <option>1 night</option>
-                                    <option>2 night</option>
-                                    <option>3 night</option>
-                                    <option>4 night</option>
-                                    <option>5 night</option>
-                                    <option>6 night</option>
-                                    <option>7 night</option>
-                                    <option>8 night</option>
-                                    <option>9 night</option>
-                                    <option>10 night</option>
-                                    <option>11 night</option>
-                                    <option>12 night</option>
-                                    <option>13 night</option>
-                                    <option>14 night</option>
-                                    <option>15 night</option>
+                                    
+                                    <option value={1}>1</option>
+                                    <option value={2}>2</option>
+                                    <option value={3}>3</option>
+                                    <option value={4}>4</option>
+                                    <option value={5}>5</option>
                                   </Input> 
                               </InputGroup>
                         </FormGroup>
@@ -108,7 +128,7 @@ export default class Fill extends Component {
                       <Col md={2}>
                         <FormGroup>
                             <Label for="checkout">Check-Out:</Label>
-                            <Label>{ this.state.checkin }</Label>
+                            <Label>{ this.state.checkout }</Label>
                         </FormGroup>
                       </Col>
                       <Col md={4}>
