@@ -18,7 +18,6 @@ import {
 class Account extends Component {
     constructor(props) {
         super(props);
-    
         this.goTo = this.goTo.bind(this);
         this.state = {
           activeTab: '1',
