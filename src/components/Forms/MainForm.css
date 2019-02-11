@@ -34,7 +34,7 @@ a.list-group-item {
 }
 
 .form-check {
-    padding-left: 0 !important;
+    padding-left: 0;
 }
 
 .tagline-2 {
