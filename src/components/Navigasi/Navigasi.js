@@ -46,7 +46,12 @@ export class Navigasi extends Component {
         
           <Navbar id="navigasi" expand="md">
             <Container>
-              <NavbarBrand href="/"><img src={burger} alt="burger"/> &nbsp; <img src={logo} alt="logo-traveloka"/></NavbarBrand>
+              <NavbarBrand href="/">
+                  <img src={burger} alt="burger"/> &nbsp; 
+                  <Link to='/'>
+                      <img src={logo} alt="logo-traveloka"/>
+                  </Link>
+              </NavbarBrand>
               <NavbarToggler  />
               <Collapse  navbar>
                 <Nav className="ml-auto" navbar>

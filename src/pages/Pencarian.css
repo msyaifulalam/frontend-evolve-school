@@ -110,9 +110,6 @@ p.card-text{
     width: 300px
 }
 
-
-
-
 .search-list.card{
     flex-direction: row;
     padding: 0px;
@@ -125,7 +122,7 @@ p.card-text{
 
 img.card-image-search-list{
     height: -webkit-fill-available;
-    
+
 }
 
 div.col-3{
