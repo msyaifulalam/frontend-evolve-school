@@ -86,9 +86,45 @@ export default class Hoteldetail extends Component {
                                         <img alt="thumbnail" style={{width:'165px', height:'116px'}}src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000076416_t2_7" className="img-thumbnail"></img>
                                     </div>
                                 </div>
+
+                                <div className="facility mt-2">
+                                    <h5>Hotel Facility</h5>
+                                </div>
+                                <div className="box-facility">
+                                    <div className="Parking">
+                                        <div className="img-facility">
+                                            <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833756238-56e24fb64a964d38b8f393bf093a77a9.png"></img>
+                                        </div>
+                                        <div className="name-facility">Parking</div>
+                                    </div>
+                                    <div className="AC">
+                                        <div className="img-facility">
+                                            <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2016/12/21/1482301285653-0a04df7d3f807b32484ceec10d9681c6.png"></img>
+                                        </div>
+                                        <div className="name-facility">AC</div>
+                                    </div>
+                                    <div className="frontdesk">
+                                        <div className="img-facility">
+                                            <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833738654-d8acba985778fc0cc5dd1d56d6cf48c5.png"></img>
+                                        </div>
+                                        <div className="name-facility">24-Hours Front Desk</div>
+                                    </div>
+                                    <div className="Elevator">
+                                        <div className="img-facility">
+                                            <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833714411-48c9b7565018d02dc32837738df1c917.png"></img>
+                                        </div>
+                                        <div className="name-facility">Elevator</div>
+                                    </div>
+                                    <div className="Wifi">
+                                        <div className="img-facility">
+                                            <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833833458-7b6ab67bc5df6ef9f2caee150aae1f43.png"></img>
+                                        </div>
+                                        <div className="name-facility">Wifi</div>
+                                    </div>
+                                </div>
                             </Col>
 
-                            <Col xs={3} md={3} style={{display:'nowrap', lineHeight:'1.25'}} className="sideInfo">
+                            <Col xs={3} md={3} style={{lineHeight:'1'}} className="sideInfo">
                                 <div className="impressive mt-2" style={{color:'#1ba0e2', fontSize:'24px', fontWeight:'600'}}>
                                     <p>Impressive <br/>
                                     <span>8.5</span><span style={{fontSize:'14px'}}>/10</span>
@@ -98,10 +134,10 @@ export default class Hoteldetail extends Component {
                                     <p>According to 1,200 guests</p>
                                 </div>
                                 <div className="card" >
-                                    <Card style={{backgroundColor:'#f6f6f6', border:'none', padding:'16px'}}>
-                                        <CardText style={{fontSize:'12px'}}>
+                                    <Card style={{backgroundColor:'#f6f6f6', padding:'16px'}}>
+                                        <CardText className="card-hotelDetail" style={{fontSize:'12px'}}>
                                             <p>10 guests talked about Friendly Staffs</p>
-                                            <p>The room is big. The view is interesting for children. They can watch airplanes taking off and landing. The staff is friendly. I got three of breakfast boxes when check out at 5 am. I will recommend this hotel to my relatives and friends.</p>
+                                            <p >The room is big. The view is interesting for children. They can watch airplanes taking off and landing. The staff is friendly. I got three of breakfast boxes when check out at 5 am. I will recommend this hotel to my relatives and friends.</p>
                                             <p>- Yuli Y. -</p>
                                         </CardText>
                                     </Card>
@@ -127,41 +163,7 @@ export default class Hoteldetail extends Component {
                         </Row>
                                 
                         {/* facility */}
-                        <div className="facility mt-2">
-                            <h5>Hotel Facility</h5>
-                        </div>
-                        <div className="box-facility">
-                            <div className="Parking">
-                                <div className="img-facility">
-                                    <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833756238-56e24fb64a964d38b8f393bf093a77a9.png"></img>
-                                </div>
-                                <div className="name-facility">Parking</div>
-                            </div>
-                            <div className="AC">
-                                <div className="img-facility">
-                                    <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2016/12/21/1482301285653-0a04df7d3f807b32484ceec10d9681c6.png"></img>
-                                </div>
-                                <div className="name-facility">AC</div>
-                            </div>
-                            <div className="frontdesk">
-                                <div className="img-facility">
-                                    <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833738654-d8acba985778fc0cc5dd1d56d6cf48c5.png"></img>
-                                </div>
-                                <div className="name-facility">24-Hours Front Desk</div>
-                            </div>
-                            <div className="Elevator">
-                                <div className="img-facility">
-                                    <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833714411-48c9b7565018d02dc32837738df1c917.png"></img>
-                                </div>
-                                <div className="name-facility">Elevator</div>
-                            </div>
-                            <div className="Wifi">
-                                <div className="img-facility">
-                                    <img alt="img-facility" src="https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/2017/06/07/1496833833458-7b6ab67bc5df6ef9f2caee150aae1f43.png"></img>
-                                </div>
-                                <div className="name-facility">Wifi</div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

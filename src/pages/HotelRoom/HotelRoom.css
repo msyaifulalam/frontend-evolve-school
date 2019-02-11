@@ -193,6 +193,10 @@ svg.svgRefund , svg.svgBreakfast , .svgWifi {
     margin-top: 50px; 
 }
 
+div.bookingButton.col-3.col-md-3 {
+    padding: none !important;
+}
+
 .roomAvailable {
     color: #f34646;
     font-size: 12px;

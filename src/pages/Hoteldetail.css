@@ -74,10 +74,20 @@ p.mt-2 {
 }
 
 .sideInfo.col-3.col-md-3 {
-    margin-left: -50px;
+    margin-left: -40px;
+}
+
+div.col-3 {
+    padding: none !important;
+    border-left: none;
 }
 
 .card {
     width: 264px;
     height: auto;
+    border: none !important;
+}
+
+p.card-text {
+    width: auto;
 }
