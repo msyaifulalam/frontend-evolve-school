@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Pencarian from './pages/Pencarian';
 import Account from './pages/Account';
-import  Hoteldetail from './pages/Hoteldetail';
+import Hoteldetail from './pages/Hoteldetail';
 import HotelRoom from './pages/HotelRoom/HotelRoom';
 import PemesananHotel from './components/PemesananHotel/PesanHotel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,7 +26,7 @@ class App extends Component {
          {/* <div> */}
             <Switch>
               <Route exact path="/" component = {() => <Home/>}></Route>
-              <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
+              <Route path="/main-menu/:menu" component = {(match) => <Account router = {match}/>}></Route>
               <Route path="/pencarian" component = {(match) => <Pencarian router = {match}/>}></Route>
               <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
               <Route path="/hotelroom" component = {(match) => <HotelRoom router = {match}/>}></Route>

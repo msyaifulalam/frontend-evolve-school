@@ -1,9 +1,9 @@
 /* container */
 .pesanhotel {
-    background-color:rgb(229, 230, 231);
+    background-color: transparent;
 }
 .pesanhotel .container {
-    padding-top: 15px;
+    padding-top: 30px;
     color:  rgb(75, 75, 75);
 }
 

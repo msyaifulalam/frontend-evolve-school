@@ -2,6 +2,8 @@
 .App-header{
     color: black;
     background-color: #e6eaed;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 .Acc-Container{
     background-color: transparent;
@@ -10,11 +12,16 @@
 .list-group-item{
     background-color: transparent;
 }
+.row.top{
+    margin-top: -10px;
+}
 .card.nobackground {
     background-color: transparent;
     border: none;
 }
-
+.card.nobackground.card-body {
+    padding-top: 0px;
+}
 body{
     background-color:#eee !important;
 }
