@@ -1,0 +1,94 @@
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.howto_container{
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 25px;
+}
+
+.notif{
+    border: solid 1px #007bff;
+    background-color: whitesmoke;
+    height: 40px;
+    padding: 7px 20px;
+}
+
+.step_title{
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.step_text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textBox{
+    border: solid 1px lightgray;
+    margin: 0;
+}
+.trf_detail{
+    display: flex;
+    margin-top: 13px;
+}
+
+.pay_detail{
+    display: flex;
+}
+
+.ket{
+    width: 35%;
+}
+.ssb{
+    background-color: whitesmoke;
+    color: #007bff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.order_container{
+    background-color: white;
+    border: solid 1px lightgrey;
+}
+
+.order_textBox{
+    border-bottom:  solid 1px lightgrey;
+    padding: 20px 0;
+}
+
+.order_textBox_title{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    padding: 0 20px;
+    padding-bottom: 5px;
+}
+
+.order_textBox_text{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 0 20px;
+}
+
+.location_detail{
+    border-left: solid 2px darkblue;
+    padding-bottom: 5px;
+}
+
+.detail_list{
+    margin: 0;
+    color: grey;
+}
+.guest_name{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 0 20px;
+}

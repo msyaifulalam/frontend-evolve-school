@@ -6,6 +6,8 @@ import NotFound from './pages/NotFound';
 import Pencarian from './pages/Pencarian';
 import Account from './pages/Account';
 import  Hoteldetail from './pages/Hoteldetail';
+import Carousels from './pages/Carousels';
+import Pembayaran from './pages/Pembayaran'
 import HotelRoom from './pages/HotelRoom/HotelRoom';
 import PemesananHotel from './components/PemesananHotel/PesanHotel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,6 +31,8 @@ class App extends Component {
               <Route path="/profile" component = {(match) => <Account router = {match}/>}></Route>
               <Route path="/pencarian" component = {(match) => <Pencarian router = {match}/>}></Route>
               <Route path="/hoteldetail" component = {(match) => <Hoteldetail router = {match}/>}></Route>
+              <Route path="/carousels" component = {(match) => <Carousels router = {match}/>}></Route>
+              <Route path="/pembayaran" component = {(match) => <Pembayaran router = {match}/>}></Route>
               <Route path="/hotelroom" component = {(match) => <HotelRoom router = {match}/>}></Route>
               <Route path="/pemesananhotel" component = {(match) => <PemesananHotel router = {match}/>}></Route>
               <Route component = {() => <NotFound/>}></Route>
